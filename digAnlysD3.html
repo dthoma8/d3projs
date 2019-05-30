@@ -112,14 +112,16 @@
       
     }
 
-    function readDataFromURL(path){
+    function readDataFromURL(path, vis_func){
       
       try{
         var hope=[];
-        d3.csv(path, function(data, error){
+        d3.csv(path, function(err, data){
           console.log(data);
+          vis_func(data);
         });
-        //there is no: console.log(hope);
+
+        return hope
         
       } catch(e){
         return e
@@ -371,7 +373,9 @@
       }
     }
     
-    readDataFromURL(path="https://raw.githubusercontent.com/dthoma8/d3projs/master/data/av_data.csv")
+    var hope = readDataFromURL(path="https://raw.githubusercontent.com/dthoma8/d3projs/master/data/av_data.csv")
+    console.log("you just gotta believe and have some: ", hope)
+    
 
   </script>
 </body>
