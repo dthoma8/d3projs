@@ -281,79 +281,83 @@
       return zoom
       }
 
-    function plotScatter(data_in) {
-      try {
-        var data = processData(data_in),
-          key_info = getMeta(data),
-          keys = d3.keys(data[0]),
-          svg = preFormatContainer(), 
-          margin={top:50, right:250, bottom:10, left:20}, 
-          width=900-margin.left-margin.right,
-          height=600-margin.top-margin.bottom,
-          X=createLinearX(data, width),
-          x=X[0],
-          xAxis=X[1],
-          Y=createLinearY(data, height),
-          y=Y[0],
-          yAxis=Y[1];
+      function plotBar(data_in) {
 
-        console.log(data);
+try {
+  var data = processData(data_in, "plotBar"),
+    key_info=getMeta(data),
+    svg = preFormatContainer(), 
+    main_margin = {top: 20,bottom: 20,left: 20,right: 20},
+    mini_margin = {top: 20, bottom: 20, left: 20, right: 5},
+    main_width = 800 - main_margin.left - main_margin.right,
+    main_height = 600 - main_margin.top - main_margin.bottom,
+    mini_width = 100-mini_margin.left-mini_margin.right,
+    mini_height=800-mini_margin.top-mini_margin.bottom,
+    X = createLinearX(data,main_width),
+    Y = createOrdinalY(data, main_height),
+    x=X[0],
+    xAxis=X[1],
+    y=Y[0],
+    yAxis=Y[1],
+    zoom = mouseZoom(X, Y);
 
-        var zoom = mouseZoom(X, Y)
-        var color = colorCat()
+  function plot(params){
 
-        function plot(params) {
-          
-          var select_bars = selectOpts(data),
-            xin = select_bars[0],
-            yin = select_bars[1];
-
-          // add dots
-          var svg = this.append('g')
-          .call(zoom)
-          .classed("chart", true)
-            .attr("transform", "translate("+margin.left+","+margin.top+")")
-          .selectAll("dot")
-            .data(params.data)
-            .enter()
-            .append("circle")
-              .classed("vis_el", true)
-              .attr("r", 35)
-              .attr("cx", (d) => (x(+d.x)))
-              .attr("cy", (d) => (y(+d.y)))
-              .attr("fill-opacity", "0.6")
-              .attr("fill", (d)=>color(d[d.meta.color_by[0]]))
-              .on("mouseover", function() {
-                d3.select(this).attr("r", 50).attr("fill-opacity", "0.7").append("title").text(function(d) {return "x: "+d.x+", y: "+d.y})
-              })
-              .on("mouseout", function() {
-                d3.select(this).attr("r", 35).attr("fill-opacity", 0.6)
-              });
-
-          // add axes & legend
-          var gX = d3.select(".chart").append("g")
-            .attr("class", "xax")
-            .attr("transform", "translate(0,"+height+")")
-            .call(xAxis)
-          var gY = d3.select(".chart").append("g")
-            .attr("class", "yax")
-            .call(yAxis)
-          var legend = addLegend(this, color);
-          
-          // add on click events for select
-          xin.on("click", xSelect);
-          yin.on("click", ySelect);
-        }
-
-        plot.call(svg, {data:data})
-      } catch(e) {
-        console.log("Error in plotScatter: "+e)
-      }
-    }
+    // scale data values to axes
+    var ymain = d3.scaleLinear().domain([0, d3.max(data, (d) => (+d.value))]).range([main_height, 0]),
+      xmain = d3.scaleBand().domain(data.map((d) => (d.key))).rangeRound([0, main_width]),
+      ymini = d3.scaleLinear().domain([0, d3.max(data, (d) => (+d.value))]).range([mini_height, 0]),
+      xmini = d3.scaleBand().domain(data.map((d) => (d.key))).rangeRound([0, mini_width]);
     
+    this.append("g")
+      //.call(zoom)
+      .classed("chart", true)  
+      .attr("transform", "translate(" + main_margin.left + "," + main_margin.top + ")")
+    .selectAll(".bar")
+      .data(params.data)
+      .enter()
+      .append("rect")
+        .classed("vis_el", true)
+        .attr("class", function(d,i) {return "bar\t" + d.key + "\t" + d.value})
+        .attr("x", 0)
+        .attr("y", function(d,i){
+          return y(d.key);
+        })
+        .attr("height", function(d,i){
+          return y.bandwidth()-1;
+        })
+        .attr("width", function(d){
+          return x(d.value);    
+        })
+        .attr("fill", "steelblue")
+        .attr("fill-opacity", "0.6")
+        .on("mouseover", function() {
+          d3.select(this).attr("fill", "orange").append("title").text(function(d) {return d.key+" : "+d.value;})
+        })
+        .on("mouseout", function() {
+          d3.select(this).attr("fill", "steelblue");
+        });
+    this.append('g')
+      .attr("class", "xax")
+      .attr("transform", "translate(0,"+main_height+")")
+      .call(xAxis)
+      .selectAll("text")
+        .style("text-anchor", "end")
+        .attr('dx', "-.8em")
+        .attr("dy", ".55em")
+        .attr("transform", "rotate(-60)");
+    this.append("g")
+      .attr("class", "yax")
+      .call(yAxis);
+  }
+
+  plot.call(svg, {data: data});
+} catch(e) {
+  console.log("plotBar failed!" + e)
+}
+}
+
     var data = 'x,y,Location\n120,1,Park\n143,1,Office\n56,1,Shop\n73,1,House\n91,2,Park\n201,2,Office\n176,2,House\n96,2,Shop\n64,3,Park\n213,3,Office\n191,3,House\n102,3,Shop\n93,4,Park\n156,4,Office\n43,4,House\n81,4,Shop\n126,5,Park\n109,5,Office\n47,5,House\n66,5,Shop\n149,6,Park\n98,6,Office\n39,6,House\n65,6,Shop\n209,7,Park\n93,7,Office\n38,7,House\n73,7,Shop\n238,8,Park\n87,8,Office\n41,8,House\n72,8,Shop'
-    //var data = 'x,y\n120,1\n143,1\n56,1\n73,1\n91,2\n201,2\n176,2\n96,2\n64,3\n213,3\n191,3\n102,3\n93,4\n156,4\n43,4\n81,4\n126,5\n109,5\n47,5\n66,5\n149,6\n98,6\n39,6\n65,6\n209,7\n93,7\n38,7\n73,7\n238,8\n87,8\n41,8\n72,8'
-    plotScatter(data);
 
   </script>
 </body>

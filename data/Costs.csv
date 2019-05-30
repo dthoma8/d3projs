@@ -1,0 +1,1201 @@
+COMPONENT,COST_AMOUNT,FYYearInt,LEVEL_OF_MAINTENANCE,NATURE_OF_COST,NON_MAINTAINERS,NUMBER_OF_MAINTAINERS,PER_CAPITA_RATE,PROVIDER_OF_MAINTENANCE,SERVICE
+Active,0,2010,Field,Labor,,0,0,Organic,Other DoD
+Active,2908.746607,2012,Field,Labor,,41779,69622.21708,Organic,Marine Corps
+Active,6178.233758,2010,Field,Labor,,82454,74929.46077,Organic,Air Force
+Active,6372.65963,2012,Field,Labor,,80324,79336.9308,Organic,Air Force
+Active,6636.289881,2013,Field,Labor,,90464,73358.35118,Organic,Army
+Active,6880.509584,2010,Field,Labor,,97866,70305.41336,Organic,Army
+Active,7044.266569,2011,Field,Labor,,98771,71319.1784,Organic,Army
+Active,9445.023829,2012,Field,Labor,,119031,79349.27733,Organic,Navy
+Active,9716.712321,2015,Field,Labor,,121169,80191.40474,Organic,Navy
+Active,22410.54048,2008,Field,Labor,,336713,66556.80203,Organic,Total DoD
+Active,24391.71455,2017,Field,Labor,,313476,77810.46891,Organic,Total DoD
+Active,25559.14266,2011,Field,Labor,,340934,74968.00747,Organic,Total DoD
+Active,25706.67273,2012,Field,Labor,,335164,76698.78843,Organic,Total DoD
+Civilian,4.687854711,2015,Depot,Labor,0,0,109743.383,Organic,Other DoD
+Civilian,41.1489469,2016,Depot,Labor,0,0,112606.0525,Organic,Other DoD
+Civilian,103.0294138,2013,Field,Labor,,1190,86579.33929,Organic,Marine Corps
+Civilian,103.4227468,2017,Depot,Labor,443,838,95681.20479,Organic,Marine Corps
+Civilian,137.6339695,2014,Field,Labor,,1288,106858.6719,Organic,Other DoD
+Civilian,137.837689,2015,Field,Labor,,1256,109743.383,Organic,Other DoD
+Civilian,148.8614627,2013,Field,Labor,,1420,104832.016,Organic,Other DoD
+Civilian,153.5462546,2011,Field,Labor,,1555,98743.57208,Organic,Other DoD
+Civilian,180.5564593,2011,Depot,Labor,783,1425,84710.9632,Organic,Marine Corps
+Civilian,1308.781883,2011,Field,Labor,,14827,88270.17488,Organic,Navy
+Civilian,1343.987963,2013,Field,Labor,,14715,91334.55407,Organic,Navy
+Civilian,1361.75898,2015,Field,Labor,,15182,89695.62507,Organic,Navy
+Civilian,1492.290507,2008,Depot,Labor,6080,10879,77248.89863,Organic,Army
+Civilian,1558.381767,2017,Field,Labor,,15692,99310.58929,Organic,Navy
+Civilian,1732.720223,2011,Depot,Labor,5968,10510,85544.12234,Organic,Army
+Civilian,2573.811678,2014,Field,Labor,,29434,87443.48978,Organic,Army
+Civilian,2676.057183,2012,Field,Labor,,30948,86469.47082,Organic,Army
+Civilian,2736.588875,2009,Field,Labor,,33726,81141.81565,Organic,Army
+Civilian,3046.469068,2010,Depot,Labor,8412,15842,81440.79129,Organic,Air Force
+Civilian,3453.437663,2010,Depot,Labor,16142,20286,84998.55168,Organic,Navy
+Civilian,3640.105911,2011,Depot,Labor,16782,20686,88270.17488,Organic,Navy
+Civilian,3711.008345,2012,Depot,Labor,17267,20765,90660.41543,Organic,Navy
+Civilian,4122.797984,2016,Depot,Labor,19775,24542,97351.26896,Organic,Navy
+Civilian,5869.745095,2008,Field,Labor,,75361,77888.36526,Organic,Total DoD
+Civilian,7084.97382,2017,Field,Labor,,73275,96690.19202,Organic,Total DoD
+Civilian,7809.908304,2016,Depot,Labor,32401,48224,96867.07974,Organic,Total DoD
+Civilian,7834.042686,2009,Depot,Labor,30112,46938,101674.7915,Organic,Total DoD
+Civilian,7978.437125,2014,Depot,Labor,29662,45513,106131.5215,Organic,Total DoD
+Civilian,8379.800078,2011,Depot,Labor,32145,49431,102723.8413,Organic,Total DoD
+Guard/Reserve,0,2013,Field,Labor,,0,0,Organic,Other DoD
+Guard/Reserve,126.1138446,2016,Field,Labor,,6566,19207.10396,Organic,Marine Corps
+Guard/Reserve,136.7739812,2014,Field,Labor,,6596,20735.8977,Organic,Marine Corps
+Guard/Reserve,163.2739068,2012,Field,Labor,,6352,25704.33042,Organic,Marine Corps
+Guard/Reserve,171.1688602,2011,Field,Labor,,6238,27439.70186,Organic,Marine Corps
+Guard/Reserve,410.8199336,2009,Field,Labor,,11937,34415.67677,Organic,Navy
+Guard/Reserve,1320.653073,2015,Field,Labor,,43272,30519.80664,Organic,Air Force
+Guard/Reserve,1320.808164,2014,Field,Labor,,43994,30022.46134,Organic,Air Force
+Guard/Reserve,1351.262644,2017,Field,Labor,,41069,32902.25337,Organic,Air Force
+Guard/Reserve,1430.082617,2013,Field,Labor,,44808,31915.78773,Organic,Air Force
+Guard/Reserve,2313.284616,2014,Field,Labor,,86242,26823.17915,Organic,Army
+Guard/Reserve,2319.395384,2013,Field,Labor,,82131,28240.19413,Organic,Army
+Guard/Reserve,2416.078958,2017,Field,Labor,,83082,29080.65475,Organic,Army
+Guard/Reserve,2807.833558,2011,Field,Labor,,86656,32402.06746,Organic,Army
+Guard/Reserve,2934.172392,2009,Field,Labor,,87525,33523.82053,Organic,Army
+Guard/Reserve,4177.833996,2014,Field,Labor,,149159,28009.26525,Organic,Total DoD
+Guard/Reserve,4356.668173,2013,Field,Labor,,146222,29794.88841,Organic,Total DoD
+Guard/Reserve,4938.92587,2008,Field,Labor,,156273,31604.47339,Organic,Total DoD
+Guard/Reserve,5180.079264,2010,Field,Labor,,151790,34126.61746,Organic,Total DoD
+Total,139.9228252,2009,Field,Labor,,1528,91572.52958,Organic,Other DoD
+Total,2953.165234,2016,Field,Labor,,46210,63907.49262,Organic,Marine Corps
+Total,2967.680938,2013,Field,Labor,,47247,62812.05025,Organic,Marine Corps
+Total,9989.725013,2010,Field,Labor,,155541,64225.67048,Organic,Air Force
+Total,10170.5636,2017,Field,Labor,,146341,69499.07133,Organic,Air Force
+Total,10696.61114,2016,Field,Labor,,191974,55719.06162,Organic,Army
+Total,11290.03165,2014,Field,Labor,,201226,56106.22708,Organic,Army
+Total,11309.38258,2012,Field,Labor,,147946,76442.63837,Organic,Navy
+Total,11498.03812,2015,Field,Labor,,148792,77275.9162,Organic,Navy
+Total,11602.15841,2017,Field,Labor,,145502,79738.82427,Organic,Navy
+Total,11832.24694,2009,Field,Labor,,215671,54862.48471,Organic,Army
+Total,35560.46561,2014,Field,Labor,,542967,65492.86717,Organic,Total DoD
+Total,35822.54671,2013,Field,Labor,,547625,65414.37426,Organic,Total DoD
+Total,37321.75895,2011,Field,Labor,,570335,65438.31072,Organic,Total DoD
+,0,2008,Field,Materials,,,,Organic,Other DoD
+,0,2009,Field,Materials,,,,Commercial,Other DoD
+,0,2009,Field,Materials,,,,Organic,Other DoD
+,0,2013,Field,Materials,,,,Organic,Other DoD
+,1.129310345,2008,Depot,Overhead,,,,Commercial,Marine Corps
+,2.190692395,2015,Depot,Materials,,,,Organic,Other DoD
+,2.39424896,2013,Depot,Overhead,,,,Organic,Other DoD
+,2.434102661,2017,Depot,Materials,,,,Organic,Other DoD
+,3.39031339,2017,Depot,Overhead,,,,Commercial,Marine Corps
+,6.541426402,2012,Depot,Overhead,,,,Commercial,Marine Corps
+,16.3301305,2015,Depot,Overhead,,,,Organic,Marine Corps
+,16.40549828,2008,Depot,Overhead,,,,Organic,Marine Corps
+,16.63161374,2008,Depot,Materials,,,,Organic,Other DoD
+,17.68110919,2010,Depot,Overhead,,,,Organic,Marine Corps
+,18.30526316,2011,Depot,Overhead,,,,Organic,Marine Corps
+,28.41176471,2016,Field,Overhead,,,,Commercial,Air Force
+,29.52941176,2015,Field,Overhead,,,,Commercial,Other DoD
+,29.5577434,2015,Depot,Materials,,,,Commercial,Other DoD
+,29.66666667,2016,Field,Overhead,,,,Commercial,Other DoD
+,38.52363367,2010,Field,Overhead,,,,Commercial,Air Force
+,41.36419649,2012,Depot,Overhead,,,,Commercial,Other DoD
+,43,2009,Depot,Labor/Materials/Overhead,,,,Commercial,Marine Corps
+,53.89696709,2008,Field,Materials,,,,Commercial,Marine Corps
+,54.68767318,2009,Field,Materials,,,,Commercial,Marine Corps
+,56.47058824,2017,Field,Overhead,,,,Commercial,Navy
+,56.50433258,2011,Field,Materials,,,,Commercial,Marine Corps
+,61,2014,Field,Overhead,,,,Commercial,Navy
+,62.03921569,2017,Field,Overhead,,,,Commercial,Army
+,62.56461442,2016,Field,Materials,,,,Commercial,Marine Corps
+,63.25050789,2015,Depot,Labor,,,,Commercial,Other DoD
+,63.73789174,2017,Depot,Materials,,,,Commercial,Marine Corps
+,72.45361876,2013,Field,Overhead,,,,Organic,Marine Corps
+,74.24635772,2008,Field,Overhead,,,,Organic,Marine Corps
+,77.01372165,2008,Field,Overhead,,,,Commercial,Army
+,80.82774172,2012,Depot,Materials,,,,Commercial,Marine Corps
+,81.42569151,2017,Depot,Overhead,,,,Commercial,Other DoD
+,82.89972827,2012,Field,Overhead,,,,Organic,Marine Corps
+,93.20219554,2015,Depot,Labor,,,,Commercial,Marine Corps
+,96.79243986,2008,Depot,Contract,,,,Organic,Marine Corps
+,98,2015,Depot,Labor/Materials/Overhead,,,,Commercial,Other DoD
+,100.0196078,2014,Field,Overhead,,,,Commercial,Army
+,101.6663778,2010,Depot,Contract,,,,Organic,Marine Corps
+,102.4358974,2016,Depot,Labor,,,,Commercial,Marine Corps
+,108.1960784,2012,Field,Overhead,,,,Commercial,Army
+,142.6668327,2015,Depot,Overhead,,,,Commercial,Army
+,143,2017,Field,Materials,,,,Organic,Other DoD
+,147.7508611,2016,Depot,Overhead,,,,Commercial,Army
+,151.8386919,2013,Field,Labor/Materials/Overhead,,,,Organic,Other DoD
+,156.1697158,2015,Depot,Contract,,,,Organic,Marine Corps
+,157.1,2012,Depot,Labor/Materials/Overhead,,,,Commercial,Marine Corps
+,164.4439166,2014,Depot,Overhead,,,,Commercial,Army
+,171.4241436,2009,Depot,Overhead,,,,Organic,Army
+,176.5911482,2011,Field,Overhead,,,,Commercial,Army
+,179.372377,2013,Depot,Overhead,,,,Commercial,Army
+,183.6665338,2017,Field,Materials,,,,Commercial,Air Force
+,184.6745363,2009,Depot,Materials,,,,Organic,Marine Corps
+,186,2014,Depot,Labor/Materials/Overhead,,,,Commercial,Other DoD
+,192.0784314,2017,Field,Overhead,,,,Commercial,Total DoD
+,201.0502277,2008,Depot,Overhead,,,,Commercial,Air Force
+,201.6095137,2010,Depot,Overhead,,,,Organic,Army
+,207.2802165,2011,Depot,Overhead,,,,Commercial,Army
+,215.3396887,2012,Depot,Overhead,,,,Commercial,Army
+,215.5145357,2013,Depot,Materials,,,,Organic,Marine Corps
+,215.7738402,2016,Depot,Overhead,,,,Organic,Army
+,215.8312776,2015,Field,Overhead,,,,Organic,Air Force
+,235,2016,Depot,Labor/Materials/Overhead,,,,Commercial,Marine Corps
+,236.2722227,2016,Field,Overhead,,,,Organic,Army
+,240.5043332,2010,Depot,Materials,,,,Commercial,Other DoD
+,254.8344428,2015,Field,Labor/Materials/Overhead,,,,Organic,Other DoD
+,257.5832161,2009,Field,Overhead,,,,Organic,Air Force
+,294.1640248,2008,Field,Labor,,,,Commercial,Other DoD
+,295,2017,Field,Materials,,,,Organic,Marine Corps
+,315.079,2008,Field,Labor/Materials/Overhead,,,,Commercial,Other DoD
+,316,2016,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Marine Corps
+,329.7494294,2013,Depot,Overhead,,,,Organic,Air Force
+,351.2569671,2014,Depot,Overhead,,,,Commercial,Air Force
+,366.5947804,2013,Depot,Labor,,,,Commercial,Other DoD
+,368.6267004,2014,Depot,Overhead,,,,Organic,Air Force
+,437.2284883,2015,Field,Labor,,,,Commercial,Marine Corps
+,466.3009401,2010,Field,Materials,,,,Commercial,Navy
+,483,2015,Field,Materials,,,,Organic,Marine Corps
+,499.6,2012,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Marine Corps
+,540.9659797,2009,Depot,Overhead,,,,Organic,Navy
+,545.7742532,2017,Field,Materials,,,,Commercial,Navy
+,568,2013,Depot,Labor/Materials/Overhead,,,,Commercial,Other DoD
+,587.7927211,2008,Depot,Overhead,,,,Organic,Navy
+,588.884452,2008,Depot,Overhead,,,,Commercial,Navy
+,622.1975677,2010,Depot,Overhead,,,,Organic,Navy
+,636.1175447,2014,Depot,Overhead,,,,Organic,Navy
+,643,2013,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Marine Corps
+,679.0490798,2016,Depot,Overhead,,,,Organic,Navy
+,681.8912986,2012,Depot,Contract,,,,Organic,Air Force
+,738.3263778,2015,Depot,Labor,,,,Commercial,Army
+,744.5945291,2015,Depot,Contract,,,,Organic,Air Force
+,781.228146,2014,Depot,Overhead,,,,Commercial,Navy
+,793,2009,Field,Materials,,,,Organic,Air Force
+,814.9233979,2015,Field,Overhead,,,,Organic,Total DoD
+,835.7486099,2013,Depot,Contract,,,,Organic,Army
+,851.0266825,2014,Depot,Labor,,,,Commercial,Army
+,865.6630985,2015,Depot,Contract,,,,Organic,Navy
+,899.1181482,2009,Field,Labor,,,,Commercial,Marine Corps
+,920.3365889,2008,Field,Overhead,,,,Organic,Total DoD
+,933,2011,Field,Labor/Materials/Overhead,,,,Commercial,Marine Corps
+,943,2013,Field,Labor/Materials/Overhead,,,,Commercial,Marine Corps
+,978.668,2009,Field,Labor/Materials/Overhead,,,,Commercial,Marine Corps
+,992.0003125,2017,Depot,Labor,,,,Commercial,Other DoD
+,994.6647002,2012,Depot,Contract,,,,Organic,Navy
+,1052.224832,2017,Depot,Overhead,,,,Organic,Total DoD
+,1085,2014,Field,Materials,,,,Organic,Air Force
+,1118.925179,2011,Field,Overhead,,,,Organic,Total DoD
+,1128.936518,2010,Field,Materials,,,,Commercial,Total DoD
+,1131.693533,2015,Depot,Materials,,,,Organic,Army
+,1134.405928,2016,Depot,Materials,,,,Organic,Army
+,1140.045412,2009,Depot,Overhead,,,,Commercial,Total DoD
+,1162.879782,2012,Depot,Labor,,,,Commercial,Army
+,1165,2008,Field,Materials,,,,Organic,Air Force
+,1186.81643,2008,Depot,Materials,,,,Commercial,Navy
+,1188.765456,2009,Depot,Materials,,,,Organic,Navy
+,1203.989063,2014,Field,Labor,,,,Commercial,Air Force
+,1214.789912,2014,Depot,Materials,,,,Organic,Army
+,1220.710696,2017,Depot,Materials,,,,Organic,Army
+,1223.343488,2013,Depot,Materials,,,,Commercial,Army
+,1224,2017,Field,Materials,,,,Organic,Air Force
+,1265.421552,2011,Field,Labor,,,,Commercial,Air Force
+,1273.089055,2013,Depot,Overhead,,,,Commercial,Total DoD
+,1285.914572,2016,Field,Labor,,,,Commercial,Air Force
+,1290.238887,2009,Depot,Materials,,,,Commercial,Navy
+,1322.504044,2010,Field,Labor,,,,Commercial,Marine Corps
+,1353,2015,Field,Materials,,,,Organic,Army
+,1368.239316,2011,Depot,Overhead,,,,Commercial,Total DoD
+,1389.162724,2009,Depot,Contract,,,,Organic,Army
+,1413.882559,2017,Depot,Materials,,,,Organic,Navy
+,1506,2015,Field,Labor/Materials/Overhead,,,,Commercial,Other DoD
+,1536.767459,2010,Depot,Materials,,,,Commercial,Army
+,1537,2017,Depot,Labor/Materials/Overhead,,,,Commercial,Other DoD
+,1541.187655,2014,Depot,Materials,,,,Commercial,Navy
+,1583.913566,2016,Field,Materials,,,,Commercial,Total DoD
+,1586.764675,2011,Depot,Materials,,,,Commercial,Navy
+,1629,2016,Depot,Labor/Materials/Overhead,,,,Commercial,Army
+,1678.642627,2011,Field,Labor,,,,Commercial,Navy
+,1729.76996,2008,Field,Labor,,,,Commercial,Navy
+,1744,2017,Field,Labor/Materials/Overhead,,,,Commercial,Air Force
+,1854,2015,Depot,Labor/Materials/Overhead,,,,Commercial,Army
+,1932.702692,2009,Depot,Materials,,,,Organic,Army
+,1959.222242,2009,Field,Labor,,,,Commercial,Navy
+,2052.486964,2015,Field,Labor,,,,Commercial,Air Force
+,2085.898533,2013,Depot,Materials,,,,Organic,Air Force
+,2201.402437,2009,Field,Labor,,,,Commercial,Army
+,2231.710196,2017,Depot,Contract,,,,Organic,Total DoD
+,2261.849701,2015,Depot,Materials,,,,Commercial,Air Force
+,2302.113281,2012,Field,Labor,,,,Commercial,Navy
+,2372.633333,2009,Depot,Materials,,,,Commercial,Air Force
+,2405.746883,2008,Depot,Materials,,,,Organic,Army
+,2482.9877,2013,Depot,Contract,,,,Organic,Total DoD
+,2507.6099,2008,Depot,Materials,,,,Commercial,Army
+,2518.657657,2014,Depot,Contract,,,,Organic,Total DoD
+,2576.976158,2016,Field,Labor,,,,Commercial,Army
+,2615.267249,2011,Depot,Materials,,,,Commercial,Air Force
+,2635.495453,2008,Depot,Contract,,,,Organic,Total DoD
+,2697.149467,2008,Field,Labor,,,,Commercial,Army
+,2741,2016,Field,Materials,,,,Organic,Navy
+,2780,2017,Field,Materials,,,,Organic,Navy
+,2814,2013,Field,Labor/Materials/Overhead,,,,Commercial,Navy
+,2820.199825,2008,Depot,Materials,,,,Organic,Air Force
+,2826,2016,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Army
+,2892.520313,2011,Depot,Contract,,,,Organic,Total DoD
+,2941.170267,2008,Depot,Materials,,,,Commercial,Air Force
+,2992.585615,2015,Depot,Labor,,,,Commercial,Air Force
+,3070,2014,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Army
+,3127.796244,2008,Field,Labor/Materials/Overhead,,,,Organic,Marine Corps
+,3143.735,2008,Field,Labor/Materials/Overhead,,,,Commercial,Army
+,3244.799118,2008,Depot,Labor,,,,Commercial,Navy
+,3355,2009,Depot,Labor/Materials/Overhead,,,,Commercial,Army
+,3418.368542,2016,Depot,Materials,,,,Commercial,Air Force
+,3646.377006,2017,Depot,Materials,,,,Commercial,Air Force
+,3929.5,2011,Field,Materials,,,,Organic,Army
+,4113.170247,2017,Depot,Materials,,,,Organic,Air Force
+,4122.544002,2013,Depot,Labor,,,,Commercial,Navy
+,4398.350332,2015,Depot,Labor,,,,Commercial,Navy
+,4647.484,2010,Field,Materials,,,,Organic,Total DoD
+,4860.2,2008,Field,Materials,,,,Organic,Total DoD
+,4894.5,2011,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Army
+,4984.1,2008,Depot,Labor/Materials/Overhead,,,,Commercial,Air Force
+,5101,2014,Field,Labor/Materials/Overhead,,,,Commercial,Army
+,5158,2012,Field,Materials,,,,Organic,Army
+,5454,2009,Depot,Labor/Materials/Overhead,,,,Commercial,Navy
+,5501,2016,Field,Materials,,,,Organic,Total DoD
+,5825.720994,2010,Field,Labor,,,,Commercial,Army
+,5949.3,2011,Depot,Labor/Materials/Overhead,,,,Commercial,Air Force
+,6072.3,2010,Depot,Labor/Materials/Overhead,,,,Commercial,Air Force
+,6187.1,2010,Depot,Labor/Materials/Overhead,,,,Commercial,Navy
+,6231,2013,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Navy
+,6233,2013,Depot,Labor/Materials/Overhead,,,,Commercial,Navy
+,6316.663466,2016,Depot,Materials,,,,Commercial,Total DoD
+,6355.164,2010,Field,Labor/Materials/Overhead,,,,Commercial,Army
+,6641.7,2010,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Air Force
+,6679.466649,2009,Field,Labor,,,,Commercial,Total DoD
+,6790.718693,2008,Field,Labor,,,,Commercial,Total DoD
+,6859,2014,Depot,Labor/Materials/Overhead,,,,Commercial,Navy
+,6877.27915,2017,Depot,Materials,,,,Organic,Total DoD
+,7271,2013,Field,Materials,,,,Organic,Total DoD
+,7645.5,2011,Field,Materials,,,,Organic,Total DoD
+,8813,2016,Field,Labor/Materials/Overhead,,,,Commercial,Total DoD
+,10047,2012,Field,Materials,,,,Organic,Total DoD
+,10365,2014,Field,Labor/Materials/Overhead,,,,Commercial,Total DoD
+,10700,2012,Field,Labor/Materials/Overhead,,,,Commercial,Total DoD
+,11140.44226,2013,Field,Labor/Materials/Overhead,,,,Organic,Air Force
+,11191.32424,2011,Field,Labor/Materials/Overhead,,,,Organic,Air Force
+,11286.54972,2016,Field,Labor/Materials/Overhead,,,,Organic,Air Force
+,11615.4812,2012,Field,Labor/Materials/Overhead,,,,Organic,Air Force
+,12054.72289,2017,Field,Labor/Materials/Overhead,,,,Organic,Army
+,12096,2015,Field,Labor/Materials/Overhead,,,,Commercial,Total DoD
+,12296.1669,2015,Field,Labor/Materials/Overhead,,,,Organic,Army
+,14158.66751,2013,Field,Labor/Materials/Overhead,,,,Organic,Navy
+,14259.50078,2011,Field,Labor/Materials/Overhead,,,,Organic,Navy
+,14501.37889,2015,Field,Labor/Materials/Overhead,,,,Organic,Navy
+,14933.3,2008,Depot,Labor/Materials/Overhead,,,,Commercial,Total DoD
+,15153,2009,Depot,Labor/Materials/Overhead,,,,Commercial,Total DoD
+,15862.7,2010,Depot,Labor/Materials/Overhead,,,,Commercial,Total DoD
+,16154,2013,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Total DoD
+,16348.1,2012,Depot,Labor/Materials/Overhead,,,,Commercial,Total DoD
+,16739,2015,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Total DoD
+,16978.1962,2011,Field,Labor/Materials/Overhead,,,,Organic,Army
+,17735.4,2010,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Total DoD
+,17749.5,2012,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Total DoD
+,38999.74803,2008,Field,Labor/Materials/Overhead,,,,Organic,Total DoD
+,41561.09329,2015,Field,Labor/Materials/Overhead,,,,Organic,Total DoD
+,45054.89492,2014,Field,Labor/Materials/Overhead,,,,Organic,Total DoD
+,45102.82759,2009,Field,Labor/Materials/Overhead,,,,Organic,Total DoD
+Active,0,2013,Field,Labor,,0,0,Organic,Other DoD
+Active,0,2015,Field,Labor,,0,0,Organic,Other DoD
+Active,0,2017,Field,Labor,,0,0,Organic,Other DoD
+Active,2521.142468,2008,Field,Labor,,40813,61773.02498,Organic,Marine Corps
+Active,2627.853292,2017,Field,Labor,,37550,69982.77743,Organic,Marine Corps
+Active,2955.964493,2010,Field,Labor,,43918,67306.44595,Organic,Marine Corps
+Active,6161.485672,2009,Field,Labor,,94420,65256.14988,Organic,Army
+Active,6164.831875,2013,Field,Labor,,79483,77561.64054,Organic,Air Force
+Active,6310.040088,2011,Field,Labor,,81111,77795.12135,Organic,Air Force
+Active,6404.378216,2009,Field,Labor,,88626,72262.97268,Organic,Air Force
+Active,6980.242659,2012,Field,Labor,,94030,74234.20886,Organic,Army
+Active,8366.1873,2008,Field,Labor,,118261,70743.41752,Organic,Navy
+Active,9148.097626,2010,Field,Labor,,121233,75458.80764,Organic,Navy
+Active,9454.251409,2017,Field,Labor,,116738,80986.92293,Organic,Navy
+Active,9739.308744,2016,Field,Labor,,121005,80486.82901,Organic,Navy
+Active,23851.63905,2009,Field,Labor,,340903,69966.05795,Organic,Total DoD
+Active,25162.80546,2010,Field,Labor,,345471,72836.23072,Organic,Total DoD
+Civilian,5.208727456,2017,Depot,Labor,0,0,114078.0579,Organic,Other DoD
+Civilian,13.02735188,2010,Depot,Labor,0,0,95574.72648,Organic,Other DoD
+Civilian,93.10944732,2015,Field,Labor,,1110,83882.38497,Organic,Marine Corps
+Civilian,98.4908273,2010,Field,Labor,,1212,81263.05883,Organic,Marine Corps
+Civilian,98.96589948,2012,Field,Labor,,1149,86132.20146,Organic,Marine Corps
+Civilian,103.751073,2016,Depot,Labor,484,892,93678.29266,Organic,Marine Corps
+Civilian,172.836425,2009,Depot,Labor,425,1744,80384.96213,Organic,Marine Corps
+Civilian,219.7496466,2015,Depot,Labor,521,986,83882.38497,Organic,Marine Corps
+Civilian,1019.978135,2013,Depot,Labor,5061,8452,86765.23833,Organic,Army
+Civilian,1028.795103,2016,Depot,Labor,4754,7098,93601.47608,Organic,Army
+Civilian,1361.084817,2012,Field,Labor,,15013,90660.41543,Organic,Navy
+Civilian,1401.366129,2010,Depot,Labor,6276,10801,82130.49154,Organic,Army
+Civilian,2266.592418,2009,Field,Labor,,28008,80926.60733,Organic,Air Force
+Civilian,2313.761149,2015,Field,Labor,,27233,84961.66963,Organic,Air Force
+Civilian,2378.087729,2013,Field,Labor,,27631,86065.93062,Organic,Air Force
+Civilian,2438.362155,2011,Field,Labor,,28697,84969.23563,Organic,Air Force
+Civilian,2445.403027,2012,Field,Labor,,28555,85638.348,Organic,Air Force
+Civilian,2718.919918,2009,Depot,Labor,7541,14219,80926.60733,Organic,Air Force
+Civilian,2801.316234,2011,Depot,Labor,8612,16810,84969.23563,Organic,Air Force
+Civilian,3238.783596,2008,Depot,Labor,15183,19910,79937.35398,Organic,Navy
+Civilian,6461.641225,2010,Field,Labor,,78167,82664.56721,Organic,Total DoD
+Civilian,6735.591196,2011,Field,Labor,,78230,86099.84911,Organic,Total DoD
+Civilian,7080.340042,2016,Field,Labor,,74727,94749.42179,Organic,Total DoD
+Civilian,8103.488079,2010,Depot,Labor,31608,48477,101186.0908,Organic,Total DoD
+Civilian,8363.785822,2017,Depot,Labor,32700,47829,103860.5449,Organic,Total DoD
+Guard/Reserve,0,2016,Field,Labor,,0,0,Organic,Other DoD
+Guard/Reserve,0,2017,Field,Labor,,0,0,Organic,Other DoD
+Guard/Reserve,136.1874356,2013,Field,Labor,,6220,21895.0861,Organic,Marine Corps
+Guard/Reserve,164.7171637,2017,Field,Labor,,6415,25676.87665,Organic,Marine Corps
+Guard/Reserve,193.9500416,2008,Field,Labor,,6281,30878.84758,Organic,Marine Corps
+Guard/Reserve,418.9112113,2008,Field,Labor,,12753,32848.05233,Organic,Navy
+Guard/Reserve,419.5668217,2015,Field,Labor,,12441,33724.5255,Organic,Navy
+Guard/Reserve,1616.88793,2008,Field,Labor,,50702,31890.02269,Organic,Air Force
+Guard/Reserve,2098.438822,2015,Field,Labor,,86655,24216.01549,Organic,Army
+Total,146.6116304,2010,Field,Labor,,1534,95574.72648,Organic,Other DoD
+Total,2895.140708,2017,Field,Labor,,45037,64283.60476,Organic,Marine Corps
+Total,2949.664623,2015,Field,Labor,,46909,62880.56926,Organic,Marine Corps
+Total,3073.541407,2014,Field,Labor,,48061,63950.84178,Organic,Marine Corps
+Total,3170.986414,2012,Field,Labor,,49280,64346.31521,Organic,Marine Corps
+Total,10115.25886,2009,Field,Labor,,141402,71535.47233,Organic,Navy
+Total,10414.72667,2012,Field,Labor,,154403,67451.58234,Organic,Air Force
+Total,11071.51057,2011,Field,Labor,,146356,75647.80787,Organic,Navy
+Total,11198.04658,2013,Field,Labor,,144714,77380.53388,Organic,Navy
+Total,11468.50343,2014,Field,Labor,,146685,78184.56848,Organic,Navy
+Total,11707.25443,2016,Field,Labor,,149854,78124.40395,Organic,Navy
+Total,12588.94013,2010,Field,Labor,,218424,57635.3337,Organic,Army
+Total,35034.1699,2015,Field,Labor,,540874,64773.25569,Organic,Total DoD
+Total,36804.52595,2010,Field,Labor,,575428,63960.26254,Organic,Total DoD
+Total,37315.12071,2012,Field,Labor,,565081,66034.99447,Organic,Total DoD
+,0,2008,Field,Materials,,,,Commercial,Other DoD
+,0,2009,Field,Overhead,,,,Commercial,Other DoD
+,0,2010,Field,Overhead,,,,Commercial,Other DoD
+,0,2011,Field,Labor,,,,Commercial,Other DoD
+,0,2011,Field,Materials,,,,Commercial,Other DoD
+,0,2012,Field,Materials,,,,Organic,Other DoD
+,0,2012,Field,Overhead,,,,Commercial,Other DoD
+,0,2013,Field,Labor,,,,Commercial,Other DoD
+,0,2013,Field,Materials,,,,Commercial,Other DoD
+,0,2014,Field,Labor,,,,Commercial,Other DoD
+,0.384790011,2015,Depot,Overhead,,,,Organic,Other DoD
+,0.555807794,2014,Depot,Overhead,,,,Organic,Other DoD
+,1.289079229,2009,Depot,Overhead,,,,Commercial,Marine Corps
+,1.929625426,2017,Depot,Contract,,,,Organic,Other DoD
+,2.752679389,2014,Field,Overhead,,,,Organic,Other DoD
+,3.377601211,2016,Depot,Overhead,,,,Organic,Other DoD
+,4.99675378,2015,Field,Overhead,,,,Organic,Other DoD
+,5.458053551,2014,Depot,Overhead,,,,Commercial,Marine Corps
+,6.624947758,2013,Depot,Overhead,,,,Commercial,Marine Corps
+,6.638226441,2008,Depot,Contract,,,,Organic,Other DoD
+,6.759656652,2017,Depot,Overhead,,,,Organic,Marine Corps
+,8.767966088,2008,Field,Overhead,,,,Organic,Other DoD
+,9.471395201,2010,Depot,Contract,,,,Organic,Other DoD
+,10,2017,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Other DoD
+,11.04890388,2009,Depot,Overhead,,,,Organic,Marine Corps
+,14.51163793,2008,Depot,Materials,,,,Commercial,Marine Corps
+,15.41176471,2014,Field,Overhead,,,,Commercial,Marine Corps
+,16.8695973,2011,Depot,Materials,,,,Organic,Other DoD
+,20.91497521,2008,Field,Overhead,,,,Commercial,Other DoD
+,21.54603854,2009,Depot,Materials,,,,Commercial,Marine Corps
+,24.86217867,2009,Field,Overhead,,,,Commercial,Marine Corps
+,25.37254902,2012,Field,Overhead,,,,Commercial,Air Force
+,26.2,2008,Depot,Labor/Materials/Overhead,,,,Commercial,Marine Corps
+,27.74509804,2013,Field,Overhead,,,,Commercial,Air Force
+,29.66666667,2017,Field,Overhead,,,,Commercial,Other DoD
+,29.99608611,2010,Depot,Overhead,,,,Commercial,Other DoD
+,31.99793655,2009,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Other DoD
+,38.43320394,2008,Field,Overhead,,,,Commercial,Air Force
+,42.5,2008,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Other DoD
+,43.49773032,2011,Depot,Overhead,,,,Commercial,Other DoD
+,43.62691775,2010,Field,Overhead,,,,Commercial,Marine Corps
+,44.8763167,2017,Field,Materials,,,,Commercial,Marine Corps
+,45.45098039,2015,Field,Overhead,,,,Commercial,Air Force
+,54.6,2011,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Other DoD
+,56.09939053,2014,Depot,Materials,,,,Commercial,Other DoD
+,56.3,2012,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Other DoD
+,58.01960784,2012,Field,Overhead,,,,Commercial,Navy
+,63.6,2010,Depot,Labor/Materials/Overhead,,,,Commercial,Marine Corps
+,64.71082813,2014,Field,Overhead,,,,Organic,Marine Corps
+,68.72330468,2016,Field,Overhead,,,,Organic,Marine Corps
+,69.73083188,2012,Depot,Labor,,,,Commercial,Marine Corps
+,71.59504108,2015,Field,Materials,,,,Commercial,Marine Corps
+,83.87172272,2015,Depot,Materials,,,,Commercial,Marine Corps
+,84.10493236,2009,Field,Overhead,,,,Organic,Marine Corps
+,86.93226916,2011,Field,Overhead,,,,Organic,Marine Corps
+,99.44013491,2009,Depot,Contract,,,,Organic,Marine Corps
+,103.5882353,2013,Field,Overhead,,,,Commercial,Army
+,105.3960639,2012,Depot,Contract,,,,Organic,Marine Corps
+,111,2016,Field,Materials,,,,Organic,Other DoD
+,120.0468823,2014,Depot,Labor,,,,Commercial,Other DoD
+,124.6879033,2009,Field,Materials,,,,Commercial,Air Force
+,149.543863,2010,Field,Labor/Materials/Overhead,,,,Organic,Other DoD
+,153.8015286,2008,Depot,Overhead,,,,Organic,Army
+,160.3137215,2008,Depot,Overhead,,,,Commercial,Army
+,165.6184069,2017,Field,Materials,,,,Commercial,Army
+,165.9342296,2015,Depot,Overhead,,,,Organic,Army
+,170.1985208,2013,Depot,Contract,,,,Organic,Marine Corps
+,171.3142679,2013,Depot,Materials,,,,Commercial,Other DoD
+,172.8039216,2016,Field,Overhead,,,,Commercial,Total DoD
+,176,2013,Depot,Labor/Materials/Overhead,,,,Commercial,Marine Corps
+,187.7050528,2011,Depot,Materials,,,,Commercial,Other DoD
+,197.7505071,2015,Depot,Materials,,,,Organic,Marine Corps
+,199.0596895,2009,Field,Overhead,,,,Commercial,Total DoD
+,203.854067,2011,Depot,Materials,,,,Organic,Marine Corps
+,205,2013,Field,Overhead,,,,Commercial,Total DoD
+,209.5944527,2012,Depot,Materials,,,,Commercial,Other DoD
+,209.8039216,2012,Field,Overhead,,,,Commercial,Total DoD
+,212,2011,Field,Materials,,,,Organic,Marine Corps
+,213.5590382,2010,Field,Materials,,,,Commercial,Marine Corps
+,227.7545334,2012,Field,Overhead,,,,Organic,Air Force
+,237.1764706,2015,Field,Overhead,,,,Commercial,Total DoD
+,243.6688451,2014,Depot,Materials,,,,Organic,Marine Corps
+,246.3789066,2011,Field,Overhead,,,,Organic,Air Force
+,255.9,2008,Field,Materials,,,,Organic,Marine Corps
+,269.1022729,2016,Field,Materials,,,,Commercial,Army
+,279.2972168,2011,Depot,Labor,,,,Commercial,Other DoD
+,285.0276515,2012,Field,Overhead,,,,Organic,Navy
+,290.3791101,2013,Field,Overhead,,,,Organic,Army
+,316.000633,2014,Field,Overhead,,,,Organic,Army
+,348.5143114,2012,Field,Overhead,,,,Organic,Army
+,359.6672554,2013,Depot,Overhead,,,,Commercial,Air Force
+,369.5718117,2008,Field,Materials,,,,Commercial,Army
+,376.8322379,2015,Depot,Overhead,,,,Organic,Air Force
+,397.5,2009,Depot,Overhead,,,,Commercial,Air Force
+,471,2009,Depot,Labor/Materials/Overhead,,,,Commercial,Other DoD
+,481.0344716,2017,Depot,Contract,,,,Organic,Army
+,510.5,2011,Depot,Labor/Materials/Overhead,,,,Commercial,Other DoD
+,563.8107289,2015,Field,Materials,,,,Commercial,Navy
+,590,2015,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Marine Corps
+,601.3955934,2012,Depot,Overhead,,,,Organic,Navy
+,654.4491327,2016,Depot,Labor,,,,Commercial,Other DoD
+,655,2013,Field,Materials,,,,Organic,Marine Corps
+,658.768,2008,Field,Labor/Materials/Overhead,,,,Commercial,Marine Corps
+,679.1,2008,Depot,Labor/Materials/Overhead,,,,Commercial,Other DoD
+,704.4661309,2016,Depot,Labor,,,,Commercial,Army
+,727,2014,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Marine Corps
+,736.4004289,2011,Depot,Contract,,,,Organic,Air Force
+,750.2,2010,Field,Materials,,,,Organic,Army
+,755.2982727,2014,Depot,Contract,,,,Organic,Army
+,757.3535095,2013,Field,Labor,,,,Commercial,Marine Corps
+,757.4234103,2015,Depot,Overhead,,,,Commercial,Navy
+,840.0370651,2014,Depot,Contract,,,,Organic,Navy
+,844.0183697,2017,Depot,Materials,,,,Commercial,Army
+,861.8709341,2013,Field,Overhead,,,,Organic,Total DoD
+,883.7799798,2017,Depot,Overhead,,,,Commercial,Navy
+,920.5346188,2016,Depot,Contract,,,,Organic,Navy
+,945.8167268,2008,Field,Materials,,,,Commercial,Total DoD
+,947.2424143,2012,Field,Overhead,,,,Organic,Total DoD
+,949,2013,Field,Materials,,,,Organic,Air Force
+,953.1910948,2008,Depot,Overhead,,,,Organic,Total DoD
+,973,2012,Field,Materials,,,,Organic,Air Force
+,973.0067895,2015,Depot,Materials,,,,Commercial,Army
+,992.53005,2016,Depot,Overhead,,,,Organic,Total DoD
+,1013.643547,2009,Field,Materials,,,,Commercial,Army
+,1014,2016,Depot,Labor/Materials/Overhead,,,,Commercial,Other DoD
+,1045,2015,Field,Materials,,,,Organic,Air Force
+,1049,2016,Field,Materials,,,,Organic,Air Force
+,1115.061082,2008,Depot,Contract,,,,Organic,Army
+,1139.454043,2017,Depot,Overhead,,,,Commercial,Total DoD
+,1163.941425,2013,Depot,Overhead,,,,Organic,Total DoD
+,1188.822504,2010,Depot,Overhead,,,,Organic,Total DoD
+,1203.540307,2014,Depot,Overhead,,,,Organic,Total DoD
+,1215.004231,2015,Depot,Overhead,,,,Organic,Total DoD
+,1217.025375,2013,Depot,Materials,,,,Organic,Navy
+,1245.26934,2012,Depot,Overhead,,,,Commercial,Total DoD
+,1266.717946,2013,Field,Labor,,,,Commercial,Air Force
+,1293.199327,2015,Depot,Materials,,,,Organic,Navy
+,1294,2012,Field,Labor/Materials/Overhead,,,,Commercial,Air Force
+,1367,2014,Field,Labor/Materials/Overhead,,,,Commercial,Air Force
+,1403.262009,2016,Depot,Materials,,,,Commercial,Navy
+,1408.631361,2012,Depot,Materials,,,,Organic,Navy
+,1465.876923,2009,Depot,Labor,,,,Commercial,Army
+,1472.003048,2010,Depot,Materials,,,,Commercial,Navy
+,1482,2008,Field,Materials,,,,Organic,Army
+,1494.226258,2015,Depot,Materials,,,,Commercial,Navy
+,1506.69981,2011,Field,Materials,,,,Commercial,Army
+,1513,2016,Field,Labor/Materials/Overhead,,,,Commercial,Other DoD
+,1517.856494,2011,Depot,Materials,,,,Commercial,Army
+,1559.043137,2010,Field,Labor,,,,Commercial,Air Force
+,1579.69,2010,Field,Labor/Materials/Overhead,,,,Commercial,Marine Corps
+,1601.298295,2012,Field,Materials,,,,Commercial,Army
+,1608.89774,2012,Depot,Materials,,,,Commercial,Navy
+,1618.245662,2009,Field,Materials,,,,Commercial,Total DoD
+,1698.367,2008,Field,Labor/Materials/Overhead,,,,Commercial,Air Force
+,1784.913,2009,Field,Labor/Materials/Overhead,,,,Commercial,Air Force
+,1841.879506,2008,Depot,Labor,,,,Commercial,Air Force
+,1867.165404,2011,Depot,Materials,,,,Organic,Army
+,1885.428468,2013,Field,Materials,,,,Commercial,Total DoD
+,2039.579119,2015,Field,Materials,,,,Commercial,Total DoD
+,2195.4,2009,Field,Materials,,,,Organic,Navy
+,2225.583944,2013,Field,Labor,,,,Commercial,Navy
+,2370.834684,2010,Depot,Materials,,,,Organic,Air Force
+,2378.555,2010,Field,Labor/Materials/Overhead,,,,Commercial,Navy
+,2441.596,2009,Field,Labor/Materials/Overhead,,,,Commercial,Navy
+,2466.465023,2011,Depot,Materials,,,,Organic,Air Force
+,2487.961206,2017,Depot,Labor,,,,Commercial,Air Force
+,2494,2016,Field,Labor/Materials/Overhead,,,,Commercial,Navy
+,2747.209039,2012,Depot,Contract,,,,Organic,Total DoD
+,2970.320087,2011,Depot,Labor,,,,Commercial,Air Force
+,3029.002456,2012,Depot,Labor,,,,Commercial,Air Force
+,3210.104483,2010,Depot,Labor,,,,Commercial,Air Force
+,3300.252235,2014,Field,Labor/Materials/Overhead,,,,Organic,Marine Corps
+,3343.327353,2009,Depot,Contract,,,,Organic,Total DoD
+,3397,2013,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Army
+,3995.277417,2010,Depot,Labor,,,,Commercial,Navy
+,4114.916133,2013,Field,Labor,,,,Commercial,Army
+,4223.4,2008,Depot,Labor/Materials/Overhead,,,,Commercial,Army
+,4238.3,2010,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Army
+,4284.2,2012,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Army
+,4464.879077,2011,Depot,Labor,,,,Commercial,Navy
+,4536.584199,2014,Depot,Labor,,,,Commercial,Navy
+,4876.252262,2013,Depot,Materials,,,,Organic,Total DoD
+,5020.5,2008,Depot,Labor/Materials/Overhead,,,,Commercial,Navy
+,5423.999539,2009,Depot,Materials,,,,Organic,Total DoD
+,5645,2013,Depot,Labor/Materials/Overhead,,,,Commercial,Air Force
+,5732.841843,2009,Depot,Materials,,,,Commercial,Total DoD
+,5881.977168,2010,Depot,Materials,,,,Commercial,Total DoD
+,5927.673606,2012,Depot,Materials,,,,Organic,Total DoD
+,5984.3,2012,Depot,Labor/Materials/Overhead,,,,Commercial,Air Force
+,6116,2009,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Air Force
+,6347.2,2011,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Air Force
+,6459.426839,2012,Depot,Materials,,,,Commercial,Total DoD
+,6510,2011,Field,Labor/Materials/Overhead,,,,Commercial,Army
+,6514,2014,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Air Force
+,6534.4,2012,Depot,Labor/Materials/Overhead,,,,Commercial,Navy
+,6638.00517,2008,Depot,Materials,,,,Organic,Total DoD
+,7440,2017,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Navy
+,7967.616972,2012,Field,Labor,,,,Commercial,Total DoD
+,8346.392222,2013,Depot,Labor,,,,Commercial,Total DoD
+,8364.571532,2013,Field,Labor,,,,Commercial,Total DoD
+,8611,2014,Field,Materials,,,,Organic,Total DoD
+,8624.098841,2011,Field,Labor,,,,Commercial,Total DoD
+,8643.403821,2012,Depot,Labor,,,,Commercial,Total DoD
+,8703.82751,2010,Depot,Labor,,,,Commercial,Total DoD
+,9057.141855,2017,Depot,Labor,,,,Commercial,Total DoD
+,9796,2017,Field,Labor/Materials/Overhead,,,,Commercial,Total DoD
+,10455,2013,Field,Labor/Materials/Overhead,,,,Commercial,Total DoD
+,10889.56905,2010,Field,Labor/Materials/Overhead,,,,Organic,Air Force
+,11007.39516,2015,Field,Labor/Materials/Overhead,,,,Organic,Air Force
+,11622.45487,2017,Field,Labor/Materials/Overhead,,,,Organic,Air Force
+,12606.52226,2008,Field,Labor/Materials/Overhead,,,,Organic,Army
+,13733.02621,2010,Field,Labor/Materials/Overhead,,,,Organic,Army
+,13881.99535,2010,Field,Labor/Materials/Overhead,,,,Organic,Navy
+,14398,2015,Depot,Labor/Materials/Overhead,,,,Commercial,Total DoD
+,14737.21952,2016,Field,Labor/Materials/Overhead,,,,Organic,Navy
+,15132,2016,Depot,Labor/Materials/Overhead,,,,Commercial,Total DoD
+,17644,2017,Depot,Labor/Materials/Overhead,,,,Commercial,Total DoD
+,17691.88778,2009,Field,Labor/Materials/Overhead,,,,Organic,Army
+,41835.44871,2016,Field,Labor/Materials/Overhead,,,,Organic,Total DoD
+,42521.30787,2010,Field,Labor/Materials/Overhead,,,,Organic,Total DoD
+Active,0,2009,Field,Labor,,0,0,Organic,Other DoD
+Active,0,2014,Field,Labor,,0,0,Organic,Other DoD
+Active,2722.412737,2016,Field,Labor,,38527,70662.46364,Organic,Marine Corps
+Active,2730.338132,2015,Field,Labor,,39240,69580.48247,Organic,Marine Corps
+Active,2744.151261,2009,Field,Labor,,42305,64865.88491,Organic,Marine Corps
+Active,5861.853104,2008,Field,Labor,,86039,68130.18636,Organic,Air Force
+Active,6008.519119,2016,Field,Labor,,80225,74895.84442,Organic,Army
+Active,6057.182023,2014,Field,Labor,,76356,79328.17359,Organic,Air Force
+Active,6112.149656,2015,Field,Labor,,75088,81399.81962,Organic,Air Force
+Active,9273.249096,2011,Field,Labor,,118606,78185.32871,Organic,Navy
+Active,9712.833076,2014,Field,Labor,,119577,81226.5994,Organic,Navy
+Civilian,25.10125063,2011,Depot,Labor,0,0,98743.57208,Organic,Other DoD
+Civilian,29.16887375,2013,Depot,Labor,0,0,104832.016,Organic,Other DoD
+Civilian,98.85769405,2011,Field,Labor,,1167,84710.9632,Organic,Marine Corps
+Civilian,99.19504327,2009,Field,Labor,,1234,80384.96213,Organic,Marine Corps
+Civilian,102.5702515,2017,Field,Labor,,1072,95681.20479,Organic,Marine Corps
+Civilian,123.3193044,2008,Field,Labor,,1393,88527.8567,Organic,Other DoD
+Civilian,139.9228252,2009,Field,Labor,,1528,91572.52958,Organic,Other DoD
+Civilian,140.8701717,2016,Field,Labor,,1251,112606.0525,Organic,Other DoD
+Civilian,143.0538846,2017,Field,Labor,,1254,114078.0579,Organic,Other DoD
+Civilian,146.6116304,2010,Field,Labor,,1534,95574.72648,Organic,Other DoD
+Civilian,858.7393184,2015,Depot,Labor,4735,7722,84968.49702,Organic,Army
+Civilian,921.7936041,2014,Depot,Labor,4808,7973,87443.48978,Organic,Army
+Civilian,1090.985007,2008,Field,Labor,,13648,79937.35398,Organic,Navy
+Civilian,1162.815022,2009,Field,Labor,,13913,83577.59087,Organic,Navy
+Civilian,1231.229682,2012,Depot,Labor,5698,10258,86469.47082,Organic,Army
+Civilian,1231.714012,2010,Field,Labor,,14491,84998.55168,Organic,Navy
+Civilian,1523.255305,2016,Field,Labor,,15647,97351.26896,Organic,Navy
+Civilian,1632.71044,2009,Depot,Labor,6309,10848,81141.81565,Organic,Army
+Civilian,1766.122934,2008,Depot,Labor,7184,14059,77113.80179,Organic,Air Force
+Civilian,2212.764967,2014,Field,Labor,,25357,87264.46214,Organic,Air Force
+Civilian,2436.216747,2015,Field,Labor,,28672,84968.49702,Organic,Army
+Civilian,2445.159388,2008,Field,Labor,,31653,77248.89863,Organic,Army
+Civilian,2513.415197,2016,Depot,Labor,7388,15692,93716.41172,Organic,Air Force
+Civilian,2583.568338,2017,Field,Labor,,27016,95631.04597,Organic,Air Force
+Civilian,2649.175527,2016,Field,Labor,,28268,93716.41172,Organic,Air Force
+Civilian,2662.400386,2016,Field,Labor,,28444,93601.47608,Organic,Army
+Civilian,2697.399579,2017,Field,Labor,,28241,95513.60005,Organic,Army
+Civilian,2736.043209,2011,Field,Labor,,31984,85544.12234,Organic,Army
+,29.45974026,2010,Depot,Labor,,,,Commercial,Marine Corps
+Civilian,2806.459122,2017,Depot,Labor,7527,15532,95631.04597,Organic,Air Force
+Civilian,3582.391844,2013,Depot,Labor,16682,20588,91334.55407,Organic,Navy
+Civilian,3693.928357,2014,Depot,Labor,17476,21477,91245.72876,Organic,Navy
+Civilian,3806.614732,2015,Depot,Labor,18897,23781,89695.62507,Organic,Navy
+Civilian,4341.630149,2017,Depot,Labor,20054,24668,99310.58929,Organic,Navy
+Civilian,6342.684012,2015,Field,Labor,,73453,86350.23773,Organic,Total DoD
+Civilian,6667.408283,2008,Depot,Labor,29635,45891,88279.64254,Organic,Total DoD
+Civilian,6733.82041,2012,Field,Labor,,77156,87275.39543,Organic,Total DoD
+Civilian,7630.818614,2013,Depot,Labor,29103,45544,102225.389,Organic,Total DoD
+Civilian,7931.861135,2012,Depot,Labor,32012,48437,98594.90031,Organic,Total DoD
+Guard/Reserve,0,2009,Field,Labor,,0,0,Organic,Other DoD
+Guard/Reserve,0,2012,Field,Labor,,0,0,Organic,Other DoD
+Guard/Reserve,0,2014,Field,Labor,,0,0,Organic,Other DoD
+Guard/Reserve,126.2170438,2015,Field,Labor,,6559,19243.33645,Organic,Marine Corps
+Guard/Reserve,183.1118302,2010,Field,Labor,,6309,29023.90714,Organic,Marine Corps
+Guard/Reserve,198.2323135,2009,Field,Labor,,5968,33215.87023,Organic,Marine Corps
+Guard/Reserve,444.6903797,2016,Field,Labor,,13202,33683.56156,Organic,Navy
+Guard/Reserve,461.8703909,2010,Field,Labor,,12766,36179.72669,Organic,Navy
+Guard/Reserve,489.4795888,2011,Field,Labor,,12923,37876.62221,Organic,Navy
+Guard/Reserve,1558.543086,2011,Field,Labor,,45354,34363.96097,Organic,Air Force
+Guard/Reserve,1596.664011,2012,Field,Labor,,45524,35073.01667,Organic,Air Force
+Guard/Reserve,1630.277172,2009,Field,Labor,,50458,32309.58763,Organic,Air Force
+Guard/Reserve,2025.691631,2016,Field,Labor,,83305,24316.5672,Organic,Army
+Guard/Reserve,3012.74355,2010,Field,Labor,,87736,34338.73838,Organic,Army
+Guard/Reserve,3888.102333,2016,Field,Labor,,145372,26745.88183,Organic,Total DoD
+Guard/Reserve,4521.583998,2017,Field,Labor,,143638,31479.02364,Organic,Total DoD
+Guard/Reserve,4874.627577,2012,Field,Labor,,152761,31910.15755,Organic,Total DoD
+Total,123.3193044,2008,Field,Labor,,1393,88527.8567,Organic,Other DoD
+Total,137.6339695,2014,Field,Labor,,1288,106858.6719,Organic,Other DoD
+Total,2797.649886,2008,Field,Labor,,48169,58079.88304,Organic,Marine Corps
+Total,3201.613458,2011,Field,Labor,,49851,64223.65566,Organic,Marine Corps
+Total,3237.567151,2010,Field,Labor,,51439,62939.93178,Organic,Marine Corps
+Total,9606.465054,2008,Field,Labor,,164333,58457.30957,Organic,Air Force
+Total,9746.563878,2015,Field,Labor,,145593,66943.90443,Organic,Air Force
+Total,9876.083518,2008,Field,Labor,,144662,68270.06068,Organic,Navy
+Total,10702.06558,2015,Field,Labor,,198324,53962.53395,Organic,Army
+Total,10815.69368,2008,Field,Labor,,209790,51554.85811,Organic,Army
+Total,10841.68203,2010,Field,Labor,,148490,73012.87649,Organic,Navy
+Total,11187.35577,2017,Field,Labor,,192255,58190.19412,Organic,Army
+Total,12588.14334,2011,Field,Labor,,217411,57900.21359,Organic,Army
+Total,35430.25505,2009,Field,Labor,,575200,61596.41003,Organic,Total DoD
+Total,35514.1458,2016,Field,Labor,,535279,66346.98129,Organic,Total DoD
+Total,35998.27237,2017,Field,Labor,,530389,67871.45354,Organic,Total DoD
+,0,2009,Field,Labor,,,,Commercial,Other DoD
+,0,2010,Field,Materials,,,,Organic,Other DoD
+,0,2011,Field,Overhead,,,,Commercial,Other DoD
+,0,2012,Field,Labor,,,,Commercial,Other DoD
+,0,2013,Field,Labor/Materials/Overhead,,,,Commercial,Other DoD
+,0,2014,Field,Materials,,,,Organic,Other DoD
+,0,2014,Field,Overhead,,,,Commercial,Other DoD
+,0.427544457,2017,Depot,Overhead,,,,Organic,Other DoD
+,1.736662883,2015,Depot,Contract,,,,Organic,Other DoD
+,1.874198344,2010,Depot,Overhead,,,,Organic,Other DoD
+,1.980913077,2009,Depot,Overhead,,,,Organic,Other DoD
+,2.410322428,2008,Depot,Overhead,,,,Organic,Other DoD
+,2.932232608,2010,Field,Overhead,,,,Organic,Other DoD
+,2.977229254,2013,Field,Overhead,,,,Organic,Other DoD
+,3.046189674,2012,Field,Overhead,,,,Organic,Other DoD
+,3.164333459,2014,Depot,Materials,,,,Organic,Other DoD
+,3.690024848,2012,Depot,Overhead,,,,Organic,Other DoD
+,3.909267134,2011,Depot,Overhead,,,,Organic,Other DoD
+,6.926081748,2015,Depot,Overhead,,,,Commercial,Marine Corps
+,9,2015,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Other DoD
+,9.10887071,2012,Depot,Contract,,,,Organic,Other DoD
+,13,2014,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Other DoD
+,13.6309749,2013,Depot,Materials,,,,Organic,Other DoD
+,15.02705458,2010,Depot,Materials,,,,Organic,Other DoD
+,15.24404086,2016,Depot,Contract,,,,Organic,Other DoD
+,17.79707443,2013,Depot,Overhead,,,,Organic,Marine Corps
+,18.49019608,2013,Field,Overhead,,,,Commercial,Marine Corps
+,20.12204216,2014,Depot,Overhead,,,,Organic,Marine Corps
+,20.16488223,2009,Depot,Labor,,,,Commercial,Marine Corps
+,30.09095171,2013,Depot,Overhead,,,,Commercial,Other DoD
+,30.2488437,2011,Field,Overhead,,,,Commercial,Air Force
+,36.12944467,2009,Depot,Overhead,,,,Commercial,Other DoD
+,39.4,2010,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Other DoD
+,48.88311168,2008,Field,Overhead,,,,Commercial,Navy
+,51.87179487,2017,Depot,Labor,,,,Commercial,Marine Corps
+,53.71870605,2016,Depot,Overhead,,,,Commercial,Other DoD
+,55.17647059,2013,Field,Overhead,,,,Commercial,Navy
+,57.14721935,2009,Field,Overhead,,,,Commercial,Navy
+,58.96078431,2015,Field,Overhead,,,,Commercial,Navy
+,63.80281415,2017,Field,Overhead,,,,Organic,Marine Corps
+,66.0945641,2014,Depot,Materials,,,,Commercial,Marine Corps
+,77.7360515,2017,Depot,Contract,,,,Organic,Marine Corps
+,78.32960439,2011,Field,Materials,,,,Commercial,Air Force
+,87.54841295,2016,Depot,Overhead,,,,Organic,Air Force
+,99.2,2011,Depot,Labor/Materials/Overhead,,,,Commercial,Marine Corps
+,101.9102295,2010,Field,Materials,,,,Commercial,Air Force
+,118.9842105,2011,Depot,Contract,,,,Organic,Marine Corps
+,120.5369561,2013,Field,Materials,,,,Commercial,Air Force
+,125.8689459,2016,Depot,Materials,,,,Commercial,Marine Corps
+,134.6736635,2016,Field,Materials,,,,Commercial,Air Force
+,140.3866489,2014,Field,Labor/Materials/Overhead,,,,Organic,Other DoD
+,142.7212817,2009,Field,Labor/Materials/Overhead,,,,Organic,Other DoD
+,145,2014,Depot,Labor/Materials/Overhead,,,,Commercial,Marine Corps
+,153.9076923,2009,Depot,Overhead,,,,Commercial,Army
+,155.3556734,2012,Field,Labor/Materials/Overhead,,,,Organic,Other DoD
+,156.6171797,2011,Field,Labor/Materials/Overhead,,,,Organic,Other DoD
+,160.5396096,2017,Depot,Overhead,,,,Commercial,Army
+,167.1562945,2013,Field,Materials,,,,Commercial,Marine Corps
+,175.0019976,2009,Depot,Materials,,,,Commercial,Other DoD
+,184,2015,Depot,Labor/Materials/Overhead,,,,Commercial,Marine Corps
+,197.0904118,2013,Depot,Overhead,,,,Organic,Army
+,202.8174025,2012,Depot,Materials,,,,Organic,Marine Corps
+,208.4995807,2010,Depot,Labor,,,,Commercial,Other DoD
+,210.8106529,2008,Depot,Materials,,,,Organic,Marine Corps
+,214.0185354,2012,Field,Materials,,,,Commercial,Marine Corps
+,218.4400444,2013,Field,Overhead,,,,Organic,Air Force
+,221.3048966,2016,Field,Overhead,,,,Organic,Air Force
+,227.891272,2017,Field,Overhead,,,,Organic,Air Force
+,227.9965829,2012,Depot,Overhead,,,,Organic,Army
+,249.3966411,2008,Field,Overhead,,,,Organic,Air Force
+,256.9075752,2016,Field,Labor/Materials/Overhead,,,,Organic,Other DoD
+,259.8685577,2009,Depot,Labor,,,,Commercial,Other DoD
+,277.6209316,2013,Field,Overhead,,,,Organic,Navy
+,278.8296182,2011,Field,Overhead,,,,Commercial,Total DoD
+,284.3407625,2015,Field,Overhead,,,,Organic,Navy
+,287.6431682,2017,Field,Overhead,,,,Organic,Navy
+,288.9650886,2016,Field,Overhead,,,,Organic,Navy
+,293.2599131,2012,Depot,Overhead,,,,Organic,Air Force
+,295.0450972,2009,Field,Overhead,,,,Organic,Navy
+,315,2017,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Marine Corps
+,318.3991668,2012,Depot,Overhead,,,,Commercial,Air Force
+,318.8343206,2010,Field,Overhead,,,,Organic,Navy
+,321.9902114,2011,Field,Overhead,,,,Organic,Navy
+,342.8159286,2008,Field,Materials,,,,Commercial,Navy
+,357.5646833,2015,Depot,Overhead,,,,Commercial,Air Force
+,364.0158621,2010,Depot,Overhead,,,,Commercial,Air Force
+,411.4408388,2009,Field,Overhead,,,,Organic,Army
+,440.417801,2017,Field,Labor,,,,Commercial,Marine Corps
+,447.0251289,2016,Depot,Contract,,,,Organic,Army
+,463.5739959,2017,Depot,Materials,,,,Commercial,Other DoD
+,479,2010,Depot,Labor/Materials/Overhead,,,,Commercial,Other DoD
+,483,2016,Field,Materials,,,,Organic,Marine Corps
+,495,2017,Field,Labor/Materials/Overhead,,,,Commercial,Marine Corps
+,510.1,2010,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Marine Corps
+,519,2015,Field,Labor/Materials/Overhead,,,,Commercial,Marine Corps
+,522.2227426,2015,Field,Materials,,,,Commercial,Army
+,529,2012,Depot,Labor/Materials/Overhead,,,,Commercial,Other DoD
+,587.1430228,2009,Depot,Overhead,,,,Commercial,Navy
+,589.2334655,2008,Field,Labor,,,,Commercial,Marine Corps
+,598.8671112,2012,Field,Materials,,,,Commercial,Navy
+,607.7638622,2014,Field,Materials,,,,Commercial,Navy
+,628.3537993,2016,Depot,Contract,,,,Organic,Air Force
+,653,2010,Field,Materials,,,,Organic,Air Force
+,655.5228426,2015,Depot,Overhead,,,,Organic,Navy
+,661.5602871,2011,Depot,Overhead,,,,Organic,Navy
+,686.8965423,2012,Depot,Overhead,,,,Commercial,Navy
+,701.6147804,2017,Depot,Contract,,,,Organic,Air Force
+,709.720524,2016,Depot,Overhead,,,,Commercial,Navy
+,715.0920245,2017,Depot,Overhead,,,,Organic,Navy
+,719.8195346,2010,Depot,Overhead,,,,Commercial,Navy
+,732.0057298,2014,Field,Labor,,,,Commercial,Marine Corps
+,741.5269572,2017,Field,Materials,,,,Commercial,Other DoD
+,786,2014,Field,Labor/Materials/Overhead,,,,Commercial,Marine Corps
+,814.5820376,2015,Field,Labor,,,,Commercial,Other DoD
+,814.6725218,2013,Depot,Contract,,,,Organic,Navy
+,820.302916,2016,Field,Overhead,,,,Organic,Total DoD
+,821.4254474,2017,Field,Overhead,,,,Organic,Total DoD
+,829.6235317,2016,Field,Labor,,,,Commercial,Other DoD
+,854.207488,2008,Depot,Contract,,,,Organic,Navy
+,878.9361335,2010,Depot,Contract,,,,Organic,Air Force
+,912.9407916,2009,Depot,Contract,,,,Organic,Navy
+,1018.848078,2010,Depot,Contract,,,,Organic,Army
+,1039.632134,2011,Depot,Contract,,,,Organic,Army
+,1050.972541,2009,Field,Overhead,,,,Organic,Total DoD
+,1064.495631,2013,Field,Materials,,,,Commercial,Army
+,1078.628359,2009,Depot,Overhead,,,,Organic,Total DoD
+,1117,2016,Field,Materials,,,,Organic,Army
+,1121.529401,2014,Depot,Materials,,,,Commercial,Army
+,1160.232286,2012,Field,Labor,,,,Commercial,Air Force
+,1272.36991,2010,Depot,Materials,,,,Organic,Navy
+,1281.775372,2011,Depot,Overhead,,,,Organic,Total DoD
+,1332.264439,2010,Depot,Labor,,,,Commercial,Army
+,1400.528161,2013,Depot,Materials,,,,Commercial,Navy
+,1449,2016,Field,Labor/Materials/Overhead,,,,Commercial,Air Force
+,1526.137388,2017,Field,Labor,,,,Commercial,Air Force
+,1555.476379,2008,Depot,Labor,,,,Commercial,Army
+,1681.462468,2017,Field,Materials,,,,Commercial,Total DoD
+,1699.477,2010,Field,Labor/Materials/Overhead,,,,Commercial,Air Force
+,1735.215385,2009,Depot,Materials,,,,Commercial,Army
+,1765.080529,2012,Depot,Materials,,,,Commercial,Army
+,1857.624668,2010,Field,Labor,,,,Commercial,Navy
+,2076.071541,2011,Field,Materials,,,,Commercial,Total DoD
+,2089.14042,2016,Depot,Contract,,,,Organic,Total DoD
+,2121.469,2008,Field,Labor/Materials/Overhead,,,,Commercial,Navy
+,2162,2011,Field,Labor/Materials/Overhead,,,,Commercial,Navy
+,2275.149958,2013,Depot,Materials,,,,Commercial,Air Force
+,2318,2015,Field,Labor/Materials/Overhead,,,,Commercial,Air Force
+,2331.824789,2014,Depot,Materials,,,,Organic,Air Force
+,2332.388644,2016,Depot,Labor,,,,Commercial,Air Force
+,2383.730621,2015,Depot,Materials,,,,Organic,Air Force
+,2442.236138,2014,Field,Labor,,,,Commercial,Navy
+,2522.579106,2012,Field,Materials,,,,Commercial,Total DoD
+,2636.898377,2012,Depot,Materials,,,,Commercial,Air Force
+,2719,2015,Field,Materials,,,,Organic,Navy
+,2721.479,2010,Field,Materials,,,,Organic,Navy
+,2860,2015,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Army
+,2866,2011,Field,Materials,,,,Organic,Navy
+,2880,2017,Field,Labor/Materials/Overhead,,,,Commercial,Navy
+,2903,2016,Field,Labor/Materials/Overhead,,,,Commercial,Army
+,2936.342377,2017,Field,Labor,,,,Commercial,Army
+,2939.794102,2014,Depot,Labor,,,,Commercial,Air Force
+,2942,2012,Field,Materials,,,,Organic,Navy
+,2966.816845,2010,Depot,Contract,,,,Organic,Total DoD
+,3007,2015,Field,Labor/Materials/Overhead,,,,Commercial,Navy
+,3010.182787,2013,Depot,Labor,,,,Commercial,Air Force
+,3059.866667,2009,Depot,Labor,,,,Commercial,Air Force
+,3060.7,2010,Depot,Labor/Materials/Overhead,,,,Commercial,Army
+,3111,2014,Field,Labor/Materials/Overhead,,,,Commercial,Navy
+,3133.7,2011,Depot,Labor/Materials/Overhead,,,,Commercial,Army
+,3143.3,2012,Depot,Labor/Materials/Overhead,,,,Commercial,Army
+,3164,2017,Field,Labor/Materials/Overhead,,,,Commercial,Army
+,3253.943522,2017,Field,Labor/Materials/Overhead,,,,Organic,Marine Corps
+,3291.595,2009,Field,Labor/Materials/Overhead,,,,Commercial,Army
+,3310.68355,2009,Field,Labor/Materials/Overhead,,,,Organic,Marine Corps
+,3500.545727,2011,Field,Labor/Materials/Overhead,,,,Organic,Marine Corps
+,3501.317916,2015,Field,Labor/Materials/Overhead,,,,Organic,Marine Corps
+,3573.488216,2014,Field,Labor,,,,Commercial,Army
+,3576.61809,2009,Depot,Labor,,,,Commercial,Navy
+,3683.682591,2016,Depot,Materials,,,,Organic,Air Force
+,3695.134557,2013,Field,Labor/Materials/Overhead,,,,Organic,Marine Corps
+,4238.605718,2012,Depot,Labor,,,,Commercial,Navy
+,4309.017467,2016,Depot,Labor,,,,Commercial,Navy
+,4510,2014,Field,Materials,,,,Organic,Army
+,5073,2017,Field,Materials,,,,Organic,Total DoD
+,5264.647433,2014,Depot,Materials,,,,Commercial,Total DoD
+,5513,2014,Depot,Labor/Materials/Overhead,,,,Commercial,Air Force
+,5612,2015,Depot,Labor/Materials/Overhead,,,,Commercial,Air Force
+,5865.4,2008,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Navy
+,5938,2009,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Navy
+,6193.7,2012,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Air Force
+,6221,2017,Depot,Labor/Materials/Overhead,,,,Commercial,Air Force
+,6242.489513,2011,Depot,Materials,,,,Commercial,Total DoD
+,6305.9,2010,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Navy
+,6307.421225,2016,Depot,Materials,,,,Organic,Total DoD
+,6425,2014,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Navy
+,6584.1,2011,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Navy
+,6621,2015,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Navy
+,6650,2015,Depot,Labor/Materials/Overhead,,,,Commercial,Navy
+,6715.7,2012,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Navy
+,6952.105465,2008,Depot,Materials,,,,Commercial,Total DoD
+,7065,2016,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Navy
+,7447.404102,2017,Depot,Materials,,,,Commercial,Total DoD
+,7719,2017,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Air Force
+,7937.418,2008,Field,Labor/Materials/Overhead,,,,Commercial,Total DoD
+,7951.719146,2014,Field,Labor,,,,Commercial,Total DoD
+,7997,2017,Depot,Labor/Materials/Overhead,,,,Commercial,Navy
+,8280.112745,2009,Depot,Labor,,,,Commercial,Total DoD
+,8621.6,2009,Field,Materials,,,,Organic,Total DoD
+,10979,2011,Field,Labor/Materials/Overhead,,,,Commercial,Total DoD
+,11020.86169,2008,Field,Labor/Materials/Overhead,,,,Organic,Air Force
+,11351.83102,2009,Field,Labor/Materials/Overhead,,,,Organic,Air Force
+,12605.70396,2009,Field,Labor/Materials/Overhead,,,,Organic,Navy
+,14608.9535,2014,Field,Labor/Materials/Overhead,,,,Organic,Navy
+,16116.03228,2014,Field,Labor/Materials/Overhead,,,,Organic,Army
+,16555.8,2011,Depot,Labor/Materials/Overhead,,,,Commercial,Total DoD
+,16894.1,2008,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Total DoD
+,17199,2016,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Total DoD
+,18402.1,2011,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Total DoD
+,18525,2017,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Total DoD
+,43955.41764,2013,Field,Labor/Materials/Overhead,,,,Organic,Total DoD
+,48309.36313,2012,Field,Labor/Materials/Overhead,,,,Organic,Total DoD
+Active,0,2008,Field,Labor,,0,0,Organic,Other DoD
+Active,0,2011,Field,Labor,,0,0,Organic,Other DoD
+Active,0,2012,Field,Labor,,0,0,Organic,Other DoD
+Active,0,2016,Field,Labor,,0,0,Organic,Other DoD
+Active,2728.464089,2013,Field,Labor,,39837,68490.70183,Organic,Marine Corps
+Active,2836.526941,2014,Field,Labor,,40312,70364.33174,Organic,Marine Corps
+Active,2931.586904,2011,Field,Labor,,42446,69066.27018,Organic,Marine Corps
+Active,5661.357608,2008,Field,Labor,,91600,61805.21406,Organic,Army
+Active,6073.877235,2017,Field,Labor,,80932,75049.14292,Organic,Army
+Active,6075.462824,2016,Field,Labor,,75423,80551.8585,Organic,Air Force
+Active,6167.410015,2015,Field,Labor,,82997,74308.83062,Organic,Army
+Active,6235.732617,2017,Field,Labor,,78256,79683.76376,Organic,Air Force
+Active,6402.935356,2014,Field,Labor,,85550,74844.36418,Organic,Army
+Active,8541.623902,2009,Field,Labor,,115552,73920.17362,Organic,Navy
+Active,9383.055881,2013,Field,Labor,,116936,80240.9513,Organic,Navy
+Active,24545.70342,2016,Field,Labor,,315180,77878.36609,Organic,Total DoD
+Active,24726.61012,2015,Field,Labor,,318494,77636.03121,Organic,Total DoD
+Active,24912.64173,2013,Field,Labor,,326720,76250.73986,Organic,Total DoD
+Active,25009.4774,2014,Field,Labor,,321795,77718.66373,Organic,Total DoD
+Civilian,6.771345693,2014,Depot,Labor,0,0,106858.6719,Organic,Other DoD
+Civilian,14.24813,2009,Depot,Labor,0,0,91572.52958,Organic,Other DoD
+Civilian,16.81983739,2008,Depot,Labor,0,0,88527.8567,Organic,Other DoD
+Civilian,24.80356396,2012,Depot,Labor,0,0,102152.5712,Organic,Other DoD
+Civilian,82.55737587,2008,Field,Labor,,1075,76797.55895,Organic,Marine Corps
+Civilian,100.2404845,2014,Field,Labor,,1153,86938.84171,Organic,Marine Corps
+Civilian,104.6386529,2016,Field,Labor,,1117,93678.29266,Organic,Marine Corps
+Civilian,152.3094837,2012,Field,Labor,,1491,102152.5712,Organic,Other DoD
+Civilian,153.3914089,2008,Depot,Labor,1188,1043,76797.55895,Organic,Marine Corps
+Civilian,174.9724277,2012,Depot,Labor,659,1223,86132.20146,Organic,Marine Corps
+Civilian,189.1878683,2010,Depot,Labor,778,1548,81263.05883,Organic,Marine Corps
+Civilian,239.4898691,2013,Depot,Labor,598,1113,86579.33929,Organic,Marine Corps
+Civilian,270.7762595,2014,Depot,Labor,552,1031,86938.84171,Organic,Marine Corps
+Civilian,1107.065077,2017,Depot,Labor,4676,6791,95513.60005,Organic,Army
+Civilian,1348.703117,2014,Field,Labor,,14781,91245.72876,Organic,Navy
+Civilian,2127.724019,2008,Field,Labor,,27592,77113.80179,Organic,Air Force
+Civilian,2289.137762,2010,Field,Labor,,28108,81440.79129,Organic,Air Force
+Civilian,2579.27024,2013,Field,Labor,,29727,86765.23833,Organic,Army
+Civilian,2695.686993,2010,Field,Labor,,32822,82130.49154,Organic,Army
+Civilian,2759.789893,2013,Depot,Labor,6762,15391,86065.93062,Organic,Air Force
+Civilian,2789.847115,2012,Depot,Labor,8388,16191,85638.348,Organic,Air Force
+Civilian,3085.167558,2014,Depot,Labor,6826,15032,87264.46214,Organic,Air Force
+Civilian,3153.842612,2015,Depot,Labor,7035,14892,84961.66963,Organic,Air Force
+Civilian,3295.327772,2009,Depot,Labor,15837,20127,83577.59087,Organic,Navy
+Civilian,6373.154216,2014,Field,Labor,,72013,88500.0516,Organic,Total DoD
+Civilian,6405.114183,2009,Field,Labor,,78409,81688.50748,Organic,Total DoD
+Civilian,6553.236808,2013,Field,Labor,,74683,87747.36966,Organic,Total DoD
+Civilian,8043.634163,2015,Depot,Labor,31188,47381,102376.6901,Organic,Total DoD
+Guard/Reserve,0,2008,Field,Labor,,0,0,Organic,Other DoD
+Guard/Reserve,0,2010,Field,Labor,,0,0,Organic,Other DoD
+Guard/Reserve,0,2011,Field,Labor,,0,0,Organic,Other DoD
+Guard/Reserve,0,2015,Field,Labor,,0,0,Organic,Other DoD
+Guard/Reserve,406.9672342,2014,Field,Labor,,12327,33014.2966,Organic,Navy
+Guard/Reserve,471.0027367,2013,Field,Labor,,13063,36056.24563,Organic,Navy
+Guard/Reserve,503.27393,2012,Field,Labor,,13902,36201.5487,Organic,Navy
+Guard/Reserve,589.5252332,2017,Field,Labor,,13072,45098.31955,Organic,Navy
+Guard/Reserve,1291.606478,2016,Field,Labor,,42299,30535.15397,Organic,Air Force
+Guard/Reserve,1522.353493,2010,Field,Labor,,44979,33845.87236,Organic,Air Force
+Guard/Reserve,2611.415729,2012,Field,Labor,,86983,30022.13915,Organic,Army
+Guard/Reserve,2709.176687,2008,Field,Labor,,86537,31306.57045,Organic,Army
+Guard/Reserve,3964.875761,2015,Field,Labor,,148927,26622.94789,Organic,Total DoD
+Guard/Reserve,5027.025093,2011,Field,Labor,,151171,33253.89852,Organic,Total DoD
+Guard/Reserve,5173.501812,2009,Field,Labor,,155888,33187.29993,Organic,Total DoD
+Total,137.837689,2015,Field,Labor,,1256,109743.383,Organic,Other DoD
+Total,140.8701717,2016,Field,Labor,,1251,112606.0525,Organic,Other DoD
+Total,143.0538846,2017,Field,Labor,,1254,114078.0579,Organic,Other DoD
+Total,148.8614627,2013,Field,Labor,,1420,104832.016,Organic,Other DoD
+Total,152.3094837,2012,Field,Labor,,1491,102152.5712,Organic,Other DoD
+Total,153.5462546,2011,Field,Labor,,1555,98743.57208,Organic,Other DoD
+Total,3041.578618,2009,Field,Labor,,49507,61437.34458,Organic,Marine Corps
+Total,9590.755153,2014,Field,Labor,,145707,65822.19903,Organic,Air Force
+Total,9973.002221,2013,Field,Labor,,151922,65645.54324,Organic,Air Force
+Total,10016.24483,2016,Field,Labor,,145990,68609.11588,Organic,Air Force
+Total,10301.24781,2009,Field,Labor,,167092,61650.15564,Organic,Air Force
+Total,10306.94533,2011,Field,Labor,,155162,66426.99455,Organic,Air Force
+Total,11534.9555,2013,Field,Labor,,202322,57012.85824,Organic,Army
+Total,12267.71557,2012,Field,Labor,,211961,57877.23011,Organic,Army
+Total,33219.21144,2008,Field,Labor,,568347,58448.8199,Organic,Total DoD
+,0,2009,Field,Labor/Materials/Overhead,,,,Commercial,Other DoD
+,0,2010,Field,Labor,,,,Commercial,Other DoD
+,0,2010,Field,Labor/Materials/Overhead,,,,Commercial,Other DoD
+,0,2010,Field,Materials,,,,Commercial,Other DoD
+,0,2011,Field,Labor/Materials/Overhead,,,,Commercial,Other DoD
+,0,2011,Field,Materials,,,,Organic,Other DoD
+,0,2012,Field,Labor/Materials/Overhead,,,,Commercial,Other DoD
+,0,2012,Field,Materials,,,,Commercial,Other DoD
+,0,2013,Field,Overhead,,,,Commercial,Other DoD
+,0,2014,Field,Labor/Materials/Overhead,,,,Commercial,Other DoD
+,0,2014,Field,Materials,,,,Commercial,Other DoD
+,2.508513053,2014,Depot,Contract,,,,Organic,Other DoD
+,2.753246753,2010,Depot,Overhead,,,,Commercial,Marine Corps
+,2.798456504,2009,Field,Overhead,,,,Organic,Other DoD
+,3.070925092,2011,Field,Overhead,,,,Organic,Other DoD
+,4.509090909,2011,Depot,Overhead,,,,Commercial,Marine Corps
+,5.037403434,2016,Field,Overhead,,,,Organic,Other DoD
+,5.191748711,2015,Depot,Overhead,,,,Commercial,Other DoD
+,5.721077693,2017,Field,Overhead,,,,Organic,Other DoD
+,6.173845757,2009,Depot,Contract,,,,Organic,Other DoD
+,6.695156695,2016,Depot,Overhead,,,,Commercial,Marine Corps
+,6.78111588,2016,Depot,Overhead,,,,Organic,Marine Corps
+,8.719884942,2011,Depot,Contract,,,,Organic,Other DoD
+,8.901960784,2016,Field,Overhead,,,,Commercial,Marine Corps
+,9.595047717,2009,Depot,Materials,,,,Organic,Other DoD
+,9.705882353,2017,Field,Overhead,,,,Commercial,Marine Corps
+,9.853727145,2014,Depot,Overhead,,,,Commercial,Other DoD
+,10.17647059,2015,Field,Overhead,,,,Commercial,Marine Corps
+,10.55905172,2008,Depot,Labor,,,,Commercial,Marine Corps
+,10.80590238,2013,Depot,Contract,,,,Organic,Other DoD
+,15.6375674,2008,Field,Overhead,,,,Commercial,Marine Corps
+,16.41410589,2012,Depot,Overhead,,,,Organic,Marine Corps
+,18.21568627,2012,Field,Overhead,,,,Commercial,Marine Corps
+,18.69754049,2012,Depot,Materials,,,,Organic,Other DoD
+,19.22941102,2016,Depot,Materials,,,,Organic,Other DoD
+,23.17004646,2011,Field,Overhead,,,,Commercial,Marine Corps
+,26.80392157,2014,Field,Overhead,,,,Commercial,Air Force
+,31.38701299,2010,Depot,Materials,,,,Commercial,Marine Corps
+,34.19607843,2017,Field,Overhead,,,,Commercial,Air Force
+,38.5825055,2014,Field,Materials,,,,Commercial,Marine Corps
+,40.50127509,2009,Field,Overhead,,,,Commercial,Air Force
+,44.47603306,2011,Depot,Labor,,,,Commercial,Marine Corps
+,45.64330758,2008,Depot,Overhead,,,,Commercial,Other DoD
+,48.81957985,2011,Field,Overhead,,,,Commercial,Navy
+,48.90196078,2016,Field,Overhead,,,,Commercial,Navy
+,50.21487603,2011,Depot,Materials,,,,Commercial,Marine Corps
+,54.62939212,2010,Field,Overhead,,,,Commercial,Navy
+,56,2013,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Other DoD
+,56.92156863,2016,Field,Overhead,,,,Commercial,Army
+,68.65329246,2015,Field,Overhead,,,,Organic,Marine Corps
+,73.44738235,2014,Depot,Labor,,,,Commercial,Marine Corps
+,76.5490164,2009,Field,Overhead,,,,Commercial,Army
+,77.98283262,2016,Depot,Contract,,,,Organic,Marine Corps
+,79,2016,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Other DoD
+,80.22512608,2013,Depot,Materials,,,,Commercial,Marine Corps
+,81.24281432,2016,Depot,Overhead,,,,Commercial,Air Force
+,86.66178804,2017,Depot,Overhead,,,,Commercial,Air Force
+,89.14992617,2013,Depot,Labor,,,,Commercial,Marine Corps
+,93.05882353,2015,Field,Overhead,,,,Commercial,Army
+,97.75585123,2017,Depot,Overhead,,,,Organic,Air Force
+,106.801243,2010,Field,Overhead,,,,Organic,Marine Corps
+,108.3951649,2012,Field,Materials,,,,Commercial,Air Force
+,112,2015,Field,Materials,,,,Organic,Other DoD
+,119,2017,Depot,Labor/Materials/Overhead,,,,Commercial,Marine Corps
+,127.0815451,2017,Depot,Materials,,,,Organic,Marine Corps
+,127.4849785,2016,Depot,Materials,,,,Organic,Marine Corps
+,132.0872705,2008,Field,Labor/Materials/Overhead,,,,Organic,Other DoD
+,136.2070153,2014,Field,Materials,,,,Commercial,Air Force
+,162,2014,Field,Materials,,,,Organic,Marine Corps
+,178.1182115,2014,Depot,Overhead,,,,Organic,Army
+,179.5320193,2008,Field,Materials,,,,Commercial,Air Force
+,182.2766966,2010,Field,Overhead,,,,Commercial,Army
+,185,2009,Field,Materials,,,,Organic,Marine Corps
+,191.6681018,2010,Depot,Overhead,,,,Commercial,Army
+,192.4328533,2014,Depot,Contract,,,,Organic,Marine Corps
+,192.7810244,2008,Depot,Overhead,,,,Organic,Air Force
+,200.8825799,2008,Field,Overhead,,,,Commercial,Total DoD
+,201.5646447,2010,Depot,Materials,,,,Organic,Marine Corps
+,203.2352941,2014,Field,Overhead,,,,Commercial,Total DoD
+,213.5151031,2014,Field,Overhead,,,,Organic,Air Force
+,220.0620552,2015,Field,Materials,,,,Commercial,Air Force
+,232.1897552,2017,Depot,Overhead,,,,Organic,Army
+,236.3671154,2017,Field,Overhead,,,,Organic,Army
+,241.1013117,2015,Field,Overhead,,,,Organic,Army
+,246.8440403,2010,Field,Overhead,,,,Organic,Air Force
+,254.9822401,2011,Depot,Overhead,,,,Organic,Army
+,278.0413508,2012,Depot,Labor,,,,Commercial,Other DoD
+,279.0970504,2008,Field,Overhead,,,,Organic,Navy
+,286.4500685,2014,Field,Overhead,,,,Organic,Navy
+,291.7749623,2017,Field,Labor/Materials/Overhead,,,,Organic,Other DoD
+,305.8321613,2016,Depot,Materials,,,,Commercial,Other DoD
+,308.8285737,2008,Field,Overhead,,,,Organic,Army
+,314.9461884,2008,Depot,Materials,,,,Commercial,Other DoD
+,318.510504,2008,Depot,Labor,,,,Commercial,Other DoD
+,319.0566401,2010,Field,Overhead,,,,Commercial,Total DoD
+,343.0183144,2011,Depot,Overhead,,,,Organic,Air Force
+,345.4601151,2010,Depot,Overhead,,,,Organic,Air Force
+,347.1663099,2010,Field,Materials,,,,Commercial,Army
+,353.2084189,2009,Depot,Overhead,,,,Organic,Air Force
+,363.7126638,2011,Depot,Overhead,,,,Commercial,Air Force
+,382.5334248,2016,Field,Labor,,,,Commercial,Marine Corps
+,393.8860826,2010,Field,Overhead,,,,Organic,Army
+,425.2265385,2009,Field,Materials,,,,Commercial,Navy
+,434.5377931,2011,Field,Materials,,,,Commercial,Navy
+,454,2016,Field,Labor/Materials/Overhead,,,,Commercial,Marine Corps
+,460.5528667,2011,Field,Overhead,,,,Organic,Army
+,463.8632132,2016,Field,Materials,,,,Commercial,Navy
+,468,2009,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Marine Corps
+,477.4,2008,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Marine Corps
+,521.7,2011,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Marine Corps
+,522.805,2010,Field,Materials,,,,Organic,Marine Corps
+,533.2395858,2013,Field,Materials,,,,Commercial,Navy
+,562.7962165,2008,Depot,Contract,,,,Organic,Air Force
+,616.9102601,2013,Depot,Overhead,,,,Organic,Navy
+,631,2017,Field,Materials,,,,Organic,Army
+,638,2011,Field,Materials,,,,Organic,Air Force
+,651.5621446,2013,Depot,Contract,,,,Organic,Air Force
+,653.7098017,2016,Field,Materials,,,,Commercial,Other DoD
+,661.8885507,2015,Field,Materials,,,,Commercial,Other DoD
+,696.7657783,2012,Field,Labor,,,,Commercial,Marine Corps
+,703.6329186,2015,Depot,Contract,,,,Organic,Army
+,709.927837,2013,Depot,Overhead,,,,Commercial,Navy
+,728.3809524,2014,Depot,Contract,,,,Organic,Air Force
+,741.8063761,2017,Field,Labor,,,,Commercial,Other DoD
+,765.4420207,2017,Depot,Labor,,,,Commercial,Army
+,776.783008,2016,Depot,Materials,,,,Commercial,Army
+,811.4562477,2011,Depot,Overhead,,,,Commercial,Navy
+,853.325621,2011,Field,Labor,,,,Commercial,Marine Corps
+,883.4293121,2014,Field,Overhead,,,,Organic,Total DoD
+,928.2841352,2013,Depot,Labor,,,,Commercial,Army
+,929,2012,Field,Labor/Materials/Overhead,,,,Commercial,Marine Corps
+,935.6098563,2009,Depot,Contract,,,,Organic,Air Force
+,956.1481056,2012,Depot,Contract,,,,Organic,Army
+,957.89486,2010,Depot,Contract,,,,Organic,Navy
+,969.3952673,2017,Depot,Contract,,,,Organic,Navy
+,974,2012,Field,Materials,,,,Organic,Marine Corps
+,988.7836549,2011,Depot,Contract,,,,Organic,Navy
+,993.9844006,2016,Depot,Overhead,,,,Commercial,Total DoD
+,998.2946458,2008,Depot,Overhead,,,,Commercial,Total DoD
+,1069.297919,2010,Field,Overhead,,,,Organic,Total DoD
+,1142.75622,2012,Depot,Overhead,,,,Organic,Total DoD
+,1184.616195,2008,Depot,Materials,,,,Organic,Navy
+,1226.142981,2015,Depot,Overhead,,,,Commercial,Total DoD
+,1254.917033,2014,Depot,Materials,,,,Organic,Navy
+,1255.102493,2014,Depot,Overhead,,,,Commercial,Total DoD
+,1276.895321,2010,Depot,Overhead,,,,Commercial,Total DoD
+,1293.650147,2011,Depot,Materials,,,,Organic,Navy
+,1342.618317,2016,Depot,Materials,,,,Organic,Navy
+,1344.182844,2013,Depot,Materials,,,,Organic,Army
+,1374,2011,Field,Labor/Materials/Overhead,,,,Commercial,Air Force
+,1408.563289,2011,Depot,Labor,,,,Commercial,Army
+,1415,2013,Field,Labor/Materials/Overhead,,,,Commercial,Air Force
+,1427.492176,2014,Field,Materials,,,,Commercial,Army
+,1480.401777,2008,Field,Labor,,,,Commercial,Air Force
+,1513,2017,Field,Labor/Materials/Overhead,,,,Commercial,Other DoD
+,1616.476279,2010,Depot,Materials,,,,Organic,Army
+,1619.723822,2009,Field,Labor,,,,Commercial,Air Force
+,1747.413,2017,Depot,Materials,,,,Commercial,Navy
+,1770,2017,Depot,Labor/Materials/Overhead,,,,Commercial,Army
+,1868.825629,2012,Depot,Materials,,,,Organic,Army
+,1957.3,2008,Field,Materials,,,,Organic,Navy
+,1981.234826,2016,Field,Labor,,,,Commercial,Navy
+,2108.261807,2009,Depot,Materials,,,,Organic,Air Force
+,2137,2014,Depot,Labor/Materials/Overhead,,,,Commercial,Army
+,2210.045559,2014,Field,Materials,,,,Commercial,Total DoD
+,2221.948931,2014,Depot,Materials,,,,Commercial,Air Force
+,2277.755159,2017,Field,Labor,,,,Commercial,Navy
+,2331,2013,Depot,Labor/Materials/Overhead,,,,Commercial,Army
+,2384.228487,2015,Field,Labor,,,,Commercial,Navy
+,2428.701673,2012,Depot,Materials,,,,Organic,Air Force
+,2471.796925,2015,Depot,Contract,,,,Organic,Total DoD
+,2498.179655,2010,Depot,Materials,,,,Commercial,Air Force
+,2683,2013,Field,Materials,,,,Organic,Navy
+,2854,2014,Field,Materials,,,,Organic,Navy
+,2959,2012,Field,Labor/Materials/Overhead,,,,Commercial,Navy
+,2984,2013,Field,Materials,,,,Organic,Army
+,3041,2017,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Army
+,3504.888539,2016,Field,Labor/Materials/Overhead,,,,Organic,Marine Corps
+,3808.505627,2012,Field,Labor,,,,Commercial,Army
+,3867.173394,2010,Field,Labor/Materials/Overhead,,,,Organic,Marine Corps
+,4130.718434,2015,Field,Labor,,,,Commercial,Army
+,4227.886142,2012,Field,Labor/Materials/Overhead,,,,Organic,Marine Corps
+,4746,2015,Field,Labor/Materials/Overhead,,,,Commercial,Army
+,4826.709041,2011,Field,Labor,,,,Commercial,Army
+,5008.564681,2015,Depot,Materials,,,,Organic,Total DoD
+,5048.364912,2014,Depot,Materials,,,,Organic,Total DoD
+,5054.481519,2015,Depot,Materials,,,,Commercial,Total DoD
+,5126,2009,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Army
+,5166.9,2008,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Army
+,5283,2013,Field,Labor/Materials/Overhead,,,,Commercial,Army
+,5333.518723,2013,Depot,Materials,,,,Commercial,Total DoD
+,5341.9,2008,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Air Force
+,5365.80702,2017,Depot,Labor,,,,Commercial,Navy
+,5448.2,2009,Field,Materials,,,,Organic,Army
+,5476.272572,2010,Depot,Materials,,,,Organic,Total DoD
+,5518,2012,Field,Labor/Materials/Overhead,,,,Commercial,Army
+,5712,2015,Field,Materials,,,,Organic,Total DoD
+,5827,2013,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Air Force
+,5830,2009,Depot,Labor/Materials/Overhead,,,,Commercial,Air Force
+,5832,2016,Depot,Labor/Materials/Overhead,,,,Commercial,Air Force
+,5848.004237,2011,Depot,Materials,,,,Organic,Total DoD
+,6422,2016,Depot,Labor/Materials/Overhead,,,,Commercial,Navy
+,6659,2015,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Air Force
+,6863.1,2011,Depot,Labor/Materials/Overhead,,,,Commercial,Navy
+,6913,2016,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Air Force
+,6982.899889,2008,Depot,Labor,,,,Commercial,Total DoD
+,7056.282513,2016,Field,Labor,,,,Commercial,Total DoD
+,7821.352134,2016,Depot,Labor,,,,Commercial,Total DoD
+,7922.459101,2017,Field,Labor,,,,Commercial,Total DoD
+,8117.375499,2015,Depot,Labor,,,,Commercial,Total DoD
+,8320.250074,2014,Depot,Labor,,,,Commercial,Total DoD
+,8496.772,2009,Field,Labor/Materials/Overhead,,,,Commercial,Total DoD
+,8945.071171,2011,Depot,Labor,,,,Commercial,Total DoD
+,9819.244411,2015,Field,Labor,,,,Commercial,Total DoD
+,10564.89284,2010,Field,Labor,,,,Commercial,Total DoD
+,10889.27026,2014,Field,Labor/Materials/Overhead,,,,Organic,Air Force
+,12012.886,2010,Field,Labor/Materials/Overhead,,,,Commercial,Total DoD
+,12049.88336,2016,Field,Labor/Materials/Overhead,,,,Organic,Army
+,12112.48057,2008,Field,Labor/Materials/Overhead,,,,Organic,Navy
+,14536.41023,2012,Field,Labor/Materials/Overhead,,,,Organic,Navy
+,14669.80158,2017,Field,Labor/Materials/Overhead,,,,Organic,Navy
+,14809.33462,2013,Field,Labor/Materials/Overhead,,,,Organic,Army
+,14840,2014,Depot,Labor/Materials/Overhead,,,,Commercial,Total DoD
+,14953,2013,Depot,Labor/Materials/Overhead,,,,Commercial,Total DoD
+,16749,2014,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Total DoD
+,17679.99794,2009,Depot,Labor/Materials/Contract/Overhead,,,,Organic,Total DoD
+,17774.22988,2012,Field,Labor/Materials/Overhead,,,,Organic,Army
+,41892.69782,2017,Field,Labor/Materials/Overhead,,,,Organic,Total DoD
+,46086.18413,2011,Field,Labor/Materials/Overhead,,,,Organic,Total DoD
