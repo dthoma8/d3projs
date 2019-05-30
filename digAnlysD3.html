@@ -24,27 +24,13 @@
       return svg
     }
 
-    function formatScatter(data_in) {
-
-      var data = d3.csvParse(data_in),
-        obj = [],
-        keys = d3.keys(data[0]);
-      
-      if (keys.includes("x") & keys.includes("y")) {
-        data.forEach((d) => (obj.push(d)))
-        return obj;
-      } else {
-        return("X,y keys not provided in scatter data.")
-      }
-    }
-
-    function getMeta(data_in) {
-
-      var data = data_in,
-        obj={},
+    function getMeta(data) {
+      var obj={},
         keys=d3.keys(data[0]),
-        key_info={};
-      
+        key_info={}, 
+        xs=[],
+        ys=[];
+
       // meta info for plot purpose
       key_info["color_by"]=[];
       key_info["size_by"]=[];
@@ -71,6 +57,7 @@
         if(!obj[k].some(isNaN)) {
           key_info[k]["col_type"] = [];
           key_info[k]["col_type"].push("value");
+          ys.push(k);
           //just take last val for now
           
         } else{
@@ -79,37 +66,39 @@
 
           // fill values
           key_info[k]["col_type"].push("filter");
+          xs.push(k);
           // need to add cap to select
           key_info["color_by"]=[k]
         }
       })
       console.log(key_info);
-      return key_info  
+      return [key_info,xs,ys]
     }
 
-    function processData(data_in) {
-      
-      var dfd = new $.Deferred();
+    function formatBar(data_in, url=False){
+      try{
+        if (url){
+          return("bleh");
+        } else{
+          var data = d3.csvParse(data_in),
+            obj = [],
+            keys = d3.keys(data[0]),
+            META = getMeta(data),
+            key_info=META[0],
+            xs=META[1],
+            ys=META[2];
 
-      try {
+          data.forEach(function(d){
+            d["meta"]={};
+            d.meta.push(key_info);
+            obj.push(d);
+          });
 
-        var data = formatScatter(data_in),
-          metaData = getMeta(data);
-
-        data.forEach(function(d) {
-          d["meta"]={};
-          d["meta"]=metaData;
-        })
-
-        console.log(data);
-        return data
-
-      } catch(e) {
-
-        console.log("error in processData! "+e+"\n")
-
+          return [obj, xs, ys]
+        }
+      } catch(e){
+        return("Failure. %s"%e);
       }
-      
     }
 
     function readDataFromURL(path, vis_func){
