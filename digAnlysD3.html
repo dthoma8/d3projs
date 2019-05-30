@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<head>
+</head>
+
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.9.1/d3.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+  <div class="datawindow">
+    <div class="bokeh_container"><</div>
+  </div>
+  <script>
+    function preFormatContainer() {
+      
+      var margin={top:20, right:20, bottom:20, left:20},
+        width=800-margin.left-margin.right,
+        height=600-margin.top-margin.bottom,
+        svg = d3.select(".bokeh_container")
+          .append("svg")
+          .attr("id", "chart")
+          .attr("width", 800)
+          .attr("height", 800);
+
+      return svg
+    }
+
+    function formatScatter(data_in) {
+
+      var data = d3.csvParse(data_in),
+        obj = [],
+        keys = d3.keys(data[0]);
+      
+      if (keys.includes("x") & keys.includes("y")) {
+        data.forEach((d) => (obj.push(d)))
+        return obj;
+      } else {
+        return("X,y keys not provided in scatter data.")
+      }
+    }
+
+    function getMeta(data_in) {
+
+      var data = data_in,
+        obj={},
+        keys=d3.keys(data[0]),
+        key_info={};
+      
+      // meta info for plot purpose
+      key_info["color_by"]=[];
+      key_info["size_by"]=[];
+
+      // form arrays for each key
+      data.forEach(function(d) {
+        keys.forEach(function(k) {
+          if (d3.keys(obj).includes(k)) {
+            obj[k].push(d[k])
+          } else {
+            obj[k] = []
+            obj[k].push(d[k])
+          }
+        })
+      })
+
+      // check each array for num-coercible values
+      keys.forEach(function(k) {
+
+        if (!(k in key_info)) {
+          key_info[k]=[];
+        }
+
+        if(!obj[k].some(isNaN)) {
+          key_info[k]["col_type"] = [];
+          key_info[k]["col_type"].push("value");
+          //just take last val for now
+          
+        } else{
+          // instantiate keys
+          key_info[k]["col_type"] = [];
+
+          // fill values
+          key_info[k]["col_type"].push("filter");
+          // need to add cap to select
+          key_info["color_by"]=[k]
+        }
+      })
+      console.log(key_info);
+      return key_info  
+    }
+
+    function processData(data_in) {
+      
+      var dfd = new $.Deferred();
+
+      try {
+
+        var data = formatScatter(data_in),
+          metaData = getMeta(data);
+
+        data.forEach(function(d) {
+          d["meta"]={};
+          d["meta"]=metaData;
+        })
+
+        console.log(data);
+        return data
+
+      } catch(e) {
+
+        console.log("error in processData! "+e+"\n")
+
+      }
+      
+    }
+
+    function createLinearX(data, width){
+      var x = d3.scaleLinear().domain([0, 1.05*d3.max(data, (d) => (+d.x))]).range([0, width]).nice(),
+        xAxis = d3.axisBottom(x);
+
+      return [x, xAxis]
+    }
+
+    function createOrdinalX(data, width){
+      var x = d3.scaleBand().domain(data.map((d)=>(+d.key))).rangeRound([0, width]).nice(),
+        xAxis=d3.axisBottom(x);
+
+      return [x, xAxis]
+    }
+
+    function createLinearY(data, height){
+      var y = d3.scaleLinear().domain([0, 1.05*d3.max(data, (d)=>(+d.y))]).range([height, 0]).nice(),
+        yAxis = d3.axisLeft(y);
+
+      return [y, yAxis]
+    }
+
+    function createOrdinalY(data, height){
+      var y = d3.scaleBand().domain(data.map((d)=>(+d.key))).rangeRound([height, 0]).nice(),
+        yAxis = d3.axisLeft(y);
+
+      return [y, yAxis]
+    }
+
+    function xSelect(data, key_info, width){
+      //functionality for user changes in x axes
+  
+      try {
+        var value = d3.select(".xselect").value;
+
+        if (key_info[value]["col_type"] == "filter"){
+          var X = createOrdinalX(data, width),
+            x = X[0],
+            xAxis = X[1];
+        } else{
+          X=createLinearX(data, width);
+          var x = X[0],
+            xAxis=X[1];
+        }
+        // proceed w. transformaciones - protect against yourself. comment your code. psa.
+        xAxis.scale(x);
+        d3.select(".xax").transition().call(xAxis);
+        d3.select(".vis_el").transition().duration(1000).delay((i)=>(i*100)).attr("cx", (d)=>(x(+d[value])));
+
+      } catch(e) {
+        console.log("Error in xSelect: "+e);
+        return(e)
+      }
+}
+
+    function ySelect(data, key_info, height){
+      try{
+        var value = d3.select(".yselect").value;
+        // need logic on ordinal/value
+        if (key_info[value].col_type == 'filter') {
+            var Y=createOrdinalY(data, height),
+              y=Y[0],
+              y=Y[1];
+        } else {
+          var Y=createLinearY(data, height),
+            y=Y[0],
+            y=[1];
+        }
+        yAxis.scale(y);
+        d3.select(".yax").transition().call(yAxis);
+        d3.select(".vis_el").transition().duration(1000).delay((i)=>(i*100)).attr("cy", (d)=>(y(+d[value])));
+      } catch(e) {
+        console.log("Error in ySelect: "+e);
+        return(e)
+      }
+    }
+
+    function selectOpts(data){
+      var opts = d3.keys(data[0]);
+      var xin = d3.select(".bokeh_container").append("select")
+          .classed("xselect", true)
+          .style("float", "right")
+          .style("top", "0px")
+          .style("position", "relative")
+          //gottathinkbouthis
+          // you can always add this after like so: d3.select('mylovelyselect').on('change', func(){})
+        .selectAll("option")
+          .data(opts)
+          .enter()
+        .append("option")
+          .text((d)=>(d))
+          .attr("value",(d)=>(d));
+
+      //d3.select(".bokeh_container").append("br");
+
+      var yin = d3.select(".bokeh_container").append("select")
+          .classed("yselect", true)  
+          .style("right","8px")
+          .style("top", "40px")
+          .style("position", "absolute")
+        .selectAll("option")
+          .data(opts)
+          .enter()
+        .append("option")
+          .text((d)=>(d))    
+          .attr("value",(d)=>(d));
+
+      //d3.select(".bokeh_container").append("br");
+
+      return [xin, yin]
+    }
+
+    function colorCat(){
+      var scale = d3.scaleOrdinal(d3.schemeCategory20);
+      return scale
+    }
+    
+    function addLegend(svg, color){
+      //heregoesnothing
+      // add legend
+      var legendrectsize=18,
+        legendspacing=7;  
+      console.log("This is what color.domain() does",color.domain())
+      var legend = svg.selectAll(".legend")
+        .data(color.domain())
+        .enter()
+        .append("g")
+        .classed("legend", true)
+        .attr("transform", function(d, i){
+          var x = 700,
+            y = 65+15*i;
+          return "translate("+x+","+y+")";
+        })
+
+      legend.append("circle")
+          .attr("r", 7.5)
+          .style("fill", color)
+          .attr("fill-opacity", 0.6)
+        
+      legend.append("text")
+        .attr("x", legendrectsize+legendspacing)
+        .attr("y", legendrectsize-legendspacing)
+        .text(function(d){
+          return d;
+        })
+
+      return legend
+    }
+    
+    function selectColorCat(d){
+
+    }
+
+    function mouseZoom(X, Y) {
+      function zoom() {
+        var transform = d3.event.transform,
+          new_x = transform.rescaleX(X[0]),
+          xAxis = X[1].scale(new_x),
+          new_y = transform.rescaleY(Y[0]),
+          yAxis = Y[1].scale(new_y);
+
+        d3.select(".xax").call(xAxis);
+        d3.select(".yax").call(yAxis);
+        d3.selectAll(".vis_el").attr("transform", transform)
+      }
+
+      var zoom =  d3.zoom().scaleExtent([0,500]).on("zoom", zoom)//
+      return zoom
+      }
+
+    function plotScatter(data_in) {
+      try {
+        var data = processData(data_in),
+          key_info = getMeta(data),
+          keys = d3.keys(data[0]),
+          svg = preFormatContainer(), 
+          margin={top:50, right:250, bottom:10, left:20}, 
+          width=900-margin.left-margin.right,
+          height=600-margin.top-margin.bottom,
+          X=createLinearX(data, width),
+          x=X[0],
+          xAxis=X[1],
+          Y=createLinearY(data, height),
+          y=Y[0],
+          yAxis=Y[1];
+
+        console.log(data);
+
+        var zoom = mouseZoom(X, Y)
+        var color = colorCat()
+
+        function plot(params) {
+          
+          var select_bars = selectOpts(data),
+            xin = select_bars[0],
+            yin = select_bars[1];
+
+          // add dots
+          var svg = this.append('g')
+          .call(zoom)
+          .classed("chart", true)
+            .attr("transform", "translate("+margin.left+","+margin.top+")")
+          .selectAll("dot")
+            .data(params.data)
+            .enter()
+            .append("circle")
+              .classed("vis_el", true)
+              .attr("r", 35)
+              .attr("cx", (d) => (x(+d.x)))
+              .attr("cy", (d) => (y(+d.y)))
+              .attr("fill-opacity", "0.6")
+              .attr("fill", (d)=>color(d[d.meta.color_by[0]]))
+              .on("mouseover", function() {
+                d3.select(this).attr("r", 50).attr("fill-opacity", "0.7").append("title").text(function(d) {return "x: "+d.x+", y: "+d.y})
+              })
+              .on("mouseout", function() {
+                d3.select(this).attr("r", 35).attr("fill-opacity", 0.6)
+              });
+
+          // add axes & legend
+          var gX = d3.select(".chart").append("g")
+            .attr("class", "xax")
+            .attr("transform", "translate(0,"+height+")")
+            .call(xAxis)
+          var gY = d3.select(".chart").append("g")
+            .attr("class", "yax")
+            .call(yAxis)
+          var legend = addLegend(this, color);
+          
+          // add on click events for select
+          xin.on("click", xSelect);
+          yin.on("click", ySelect);
+        }
+
+        plot.call(svg, {data:data})
+      } catch(e) {
+        console.log("Error in plotScatter: "+e)
+      }
+    }
+    
+    var data = 'x,y,Location\n120,1,Park\n143,1,Office\n56,1,Shop\n73,1,House\n91,2,Park\n201,2,Office\n176,2,House\n96,2,Shop\n64,3,Park\n213,3,Office\n191,3,House\n102,3,Shop\n93,4,Park\n156,4,Office\n43,4,House\n81,4,Shop\n126,5,Park\n109,5,Office\n47,5,House\n66,5,Shop\n149,6,Park\n98,6,Office\n39,6,House\n65,6,Shop\n209,7,Park\n93,7,Office\n38,7,House\n73,7,Shop\n238,8,Park\n87,8,Office\n41,8,House\n72,8,Shop'
+    //var data = 'x,y\n120,1\n143,1\n56,1\n73,1\n91,2\n201,2\n176,2\n96,2\n64,3\n213,3\n191,3\n102,3\n93,4\n156,4\n43,4\n81,4\n126,5\n109,5\n47,5\n66,5\n149,6\n98,6\n39,6\n65,6\n209,7\n93,7\n38,7\n73,7\n238,8\n87,8\n41,8\n72,8'
+    plotScatter(data);
+
+  </script>
+</body>
+
