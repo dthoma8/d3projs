@@ -136,14 +136,16 @@
     }
 
     function createLinearX(data, key, width){
-      var x = d3.scaleLinear().domain([0, 1.05*d3.max(data, (d) => (+d[key]))]).range([0, width]).nice(),
+      var x = d3.scaleLinear().domain([0, 1.05*d3.max(data, (d) => (+d.key))]).range([0, width]).nice(),
         xAxis = d3.axisBottom(x);
 
       return [x, xAxis]
     }
 
     function createOrdinalX(data, key, width){
-      var x = d3.scaleBand().domain(data.map((d)=>(+d[key]))).rangeRound([0, width]),//.nice(),
+      console.log("thisiswhatyouareworkingwith",data[0])
+      
+      var x = d3.scaleBand().domain(data.map((d)=>(+d.key))).rangeRound([0, width]),//.nice(),
         xAxis=d3.axisBottom(x);
 
       return [x, xAxis]
@@ -151,7 +153,7 @@
 
     function createLinearY(data, value, height){
       
-      var y = d3.scaleLinear().domain([0, 1.05*d3.max(data, (d)=>(+d[value]))]).range([height, 0]).nice(),
+      var y = d3.scaleLinear().domain([0, 1.05*d3.max(data, (d)=>(+d.value))]).range([height, 0]).nice(),
         yAxis = d3.axisLeft(y);
 
       return [y, yAxis]
@@ -159,7 +161,7 @@
 
     function createOrdinalY(data, value, height){
 
-      var y = d3.scaleBand().domain(data.map((d)=>(+d[value]))).rangeRound([height, 0]),//.nice(),
+      var y = d3.scaleBand().domain(data.map((d)=>(+d.value))).rangeRound([height, 0]),//.nice(),
         yAxis = d3.axisLeft(y);
 
       return [y, yAxis]
@@ -206,7 +208,7 @@
         }
         yAxis.scale(y);
         d3.select(".yax").transition().call(yAxis);
-        d3.select(".vis_el").transition().duration(1000).delay((i)=>(i*100)).attr("cy", (d)=>(y(+d[value])));
+        d3.select(".vis_el").transition().duration(1000).delay((i)=>(i*100)).attr("cy", (d)=>(y(+d.value)));
       } catch(e) {
         console.log("Error in ySelect: "+e);
         return(e)
@@ -252,10 +254,9 @@
       data.forEach(function(d){
         // key, value contain the string names of the the cols to be the key and valuue
         // we will fill in a key and value column for each
-        d["key"]=[];
-        d["value"]=[];
-        d["key"].push(d[key]);
-        d["value"].push(d[value]);
+        
+        d["key"]=d[key];
+        d["value"]=d[value];
       })
     }
     
@@ -329,7 +330,8 @@
           value = data[0].meta.values[0];
 
         console.log("this is the key ",key);
-        //setTempData(data, key, value);
+        console.log("this is the value", value)
+        setTempData(data, key, value);
 
         var X = createOrdinalX(data, key, main_width),
           Y = createLinearY(data, value, main_height),
@@ -344,12 +346,12 @@
           // scale data values to axes
           var ymain = d3
                         .scaleLinear()
-                        .domain([0, d3.max(data, (d) => (+d[value]))])
+                        .domain([0, d3.max(data, (d) => (+d.value))])
                         .range([main_height, 0]),
 
               xmain = d3
                         .scaleBand()
-                        .domain(data.map((d) => (d[key])))
+                        .domain(data.map((d) => (+d.key)))
                         .rangeRound([0, main_width]);
           
           this.append("g")
@@ -357,25 +359,27 @@
             .classed("chart", true)  
             .attr("transform", "translate(" + main_margin.left + "," + main_margin.top + ")")
           .selectAll(".bar")
-            .data(params.data)
+            .data(params.data, function(d){
+              return d;
+            })
             .enter()
             .append("rect")
               .classed("vis_el", true)
-              .attr("class", function(d,i) {return "bar\t" + d[key] + "\t" + d[value]})
+              .attr("class", function(d,i) {return "bar\t" + d.key + "\t" + d.value})
               .attr("y", 0)
               .attr("x", function(d,i){
-                return x(d[key]);
+                return x(d.key);
               })
               .attr("height", function(d,i){
                 return x.bandwidth()-1;
               })
               .attr("width", function(d){
-                return y(d[value]);    
+                return y(d.value);    
               })
               .attr("fill", "steelblue")
               .attr("fill-opacity", "0.6")
               .on("mouseover", function() {
-                d3.select(this).attr("fill", "orange").append("title").text(function(d) {return d[key]+" : "+d[value];})
+                d3.select(this).attr("fill", "orange").append("title").text(function(d) {return d.key+" : "+d.value;})
               })
               .on("mouseout", function() {
                 d3.select(this).attr("fill", "steelblue");
