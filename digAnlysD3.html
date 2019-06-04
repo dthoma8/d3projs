@@ -31,7 +31,7 @@
 
     function getMeta(data_in) {
 
-      var data = data_in,
+      var data = d3.csvParse(data_in),
         obj={},
         keys=d3.keys(data[0]),
         key_info={};
@@ -81,30 +81,28 @@
       return key_info  
     }
 
-    function processData(data_in){
+    function processData(data_in, plot_type=''){
       
       var dfd = new $.Deferred();
     
       try {
-        var data = d3.csvParse(data_in),
+        var metaData = getMeta(data_in),
+          data = d3.csvParse(data_in),
           obj=[];
+
         data.forEach((d)=>(obj.push(d)));
-        
-        console.log("data prior to entering getMeta:", data);
-        metaData = getMeta(obj);
         obj.forEach(function(d) {
           d["meta"]={};
           d["meta"]=metaData;
-        });
-        console.log(obj);
-        return obj;
-
+        
+          console.log(obj);
+          return obj;
+        })
       } catch(e) {
 
         console.log("error in processData! "+e+"\n")
 
       }
-      
     }
     
     function readDataFromURL(path, vis_func){
