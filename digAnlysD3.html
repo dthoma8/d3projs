@@ -323,8 +323,12 @@
           main_width = 800 - main_margin.left - main_margin.right,
           main_height = 600 - main_margin.top - main_margin.bottom,
           key = data[0].meta.keys[0],
-          value = data[0].meta.values[0],
-          X = createLinearX(data, value, main_width),
+          value = data[0].meta.values[0];
+
+        console.log("this is the key ",key);
+        //setTempData(data, key, value);
+
+        var X = createLinearX(data, value, main_width),
           Y = createOrdinalY(data, key, main_height),
           x=X[0],
           xAxis=X[1],
@@ -332,14 +336,18 @@
           yAxis=Y[1],
           zoom = mouseZoom(X, Y);
 
-        console.log("this is the key ",key)
-        //setTempData(data, key, value);
-
         function plot(params){
 
           // scale data values to axes
-          var ymain = d3.scaleLinear().domain([0, d3.max(data, (d) => (+d[value]))]).range([main_height, 0]),
-            xmain = d3.scaleBand().domain(data.map((d) => (d[key]))).rangeRound([0, main_width]),
+          var ymain = d3
+                        .scaleLinear()
+                        .domain([0, d3.max(data, (d) => (+d[value]))])
+                        .range([main_height, 0]),
+
+              xmain = d3
+                      .scaleBand()
+                      .domain(data.map((d) => (d[key])))
+                      .rangeRound([0, main_width]);
           
           this.append("g")
             //.call(zoom)
