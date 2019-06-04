@@ -135,29 +135,31 @@
       }
     }
 
-    function createLinearX(data, x, width){
+    function createLinearX(data, key, width){
       var x = d3.scaleLinear().domain([0, 1.05*d3.max(data, (d) => (+d[key]))]).range([0, width]).nice(),
         xAxis = d3.axisBottom(x);
 
       return [x, xAxis]
     }
 
-    function createOrdinalX(data, x, width){
-      var x = d3.scaleBand().domain(data.map((d)=>(+d.key))).rangeRound([0, width]).nice(),
+    function createOrdinalX(data, key, width){
+      var x = d3.scaleBand().domain(data.map((d)=>(+d[key]))).rangeRound([0, width]).nice(),
         xAxis=d3.axisBottom(x);
 
       return [x, xAxis]
     }
 
-    function createLinearY(data, y, height){
-      var y = d3.scaleLinear().domain([0, 1.05*d3.max(data, (d)=>(+d[y]))]).range([height, 0]).nice(),
+    function createLinearY(data, value, height){
+      
+      var y = d3.scaleLinear().domain([0, 1.05*d3.max(data, (d)=>(+d[value]))]).range([height, 0]).nice(),
         yAxis = d3.axisLeft(y);
 
       return [y, yAxis]
     }
 
-    function createOrdinalY(data, y, height){
-      var y = d3.scaleBand().domain(data.map((d)=>(+d.key))).rangeRound([height, 0]).nice(),
+    function createOrdinalY(data, value, height){
+
+      var y = d3.scaleBand().domain(data.map((d)=>(+d[key]))).rangeRound([height, 0]).nice(),
         yAxis = d3.axisLeft(y);
 
       return [y, yAxis]
@@ -256,6 +258,7 @@
         d["value"].push(d[value]);
       })
     }
+    
     function colorCat(){
       var scale = d3.scaleOrdinal(d3.schemeCategory20);
       return scale
