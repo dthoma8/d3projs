@@ -331,8 +331,8 @@
         console.log("this is the key ",key);
         //setTempData(data, key, value);
 
-        var X = createLinearX(data, key, main_width),
-          Y = createOrdinalY(data, value, main_height),
+        var X = createOrdinalX(data, key, main_width),
+          Y = createLinearY(data, value, main_height),
           x=X[0],
           xAxis=X[1],
           y=Y[0],
@@ -348,9 +348,9 @@
                         .range([main_height, 0]),
 
               xmain = d3
-                      .scaleBand()
-                      .domain(data.map((d) => (d[key])))
-                      .rangeRound([0, main_width]);
+                        .scaleBand()
+                        .domain(data.map((d) => (d[key])))
+                        .rangeRound([0, main_width]);
           
           this.append("g")
             //.call(zoom)
@@ -362,15 +362,15 @@
             .append("rect")
               .classed("vis_el", true)
               .attr("class", function(d,i) {return "bar\t" + d[key] + "\t" + d[value]})
-              .attr("x", 0)
-              .attr("y", function(d,i){
-                return y(d[key]);
+              .attr("y", 0)
+              .attr("x", function(d,i){
+                return x(d[key]);
               })
               .attr("height", function(d,i){
-                return y.bandwidth()-1;
+                return x.bandwidth()-1;
               })
               .attr("width", function(d){
-                return x(d[value]);    
+                return y(d[value]);    
               })
               .attr("fill", "steelblue")
               .attr("fill-opacity", "0.6")
@@ -402,7 +402,7 @@
     
     //var hope = readDataFromURL(path="https://raw.githubusercontent.com/dthoma8/d3projs/master/data/av_data.csv")
 
-    var data_in = 'TMS,TAI\nA-10A,325.0998\nA-10C,1010.16\nAC-130H,40.0\nAC-130U,67.953\nAC-130W,13.0\nAT-38B,12.0\nB-1B,261.881\nB-2A,20.42\nB-52H,92.92\nC-12C,48.0\nC-12D,12.0\nC-12F,9.0\nC-12J,16.0\nC-130E,174.7017\nC-130H,539.1569999999999\nC-130J,118.92\nC-17A,400.91999999999996\nC-20B,10.0\nC-20C,6.0\nC-20E,1.0\nC-20H,4.0\nC-20K,2.0\nC-21A,104.83\nC-27J,11.42\nC-32A,12.0\nC-32B,8.0\nC-37A,16.0\nC-37B,5.08\nC-38A,4.0\nC-40B,8.0\nC-40C,17.92\nC-5A,177.0\nC-5B,82.7295\nC-5C,4.0\nC-5M,6.84\nCV-22B,8.25\nE-11A,0.08\nE-3B,114.42\nE-3C,44.42\nE-3G,1.17\nE-4B,12.0\nE-8C,34.0\nEC-130H,42.0\nEC-130J,28.0\nF-15A,73.10824\nF-15B,5.83\nF-15C,834.174\nF-15D,104.0\nF-15E,889.3399999999999\nF-16A,0.42\nF-16B,2.98634\nF-16C,2847.8419999999996\nF-16D,337.0\nF-22A,262.33000000000004\nHC-130J,4.17\nHC-130N,30.0\nHC-130P,46.0\nHH-60G,200.75\nKC-10A,118.0\nKC-135E,64.4492\nKC-135R,1088.17\nKC-135T,108.0\nLC-130H,20.0\nMC-12W,78.0\nMC-130E,32.65981\nMC-130H,80.0\nMC-130J,7.08\nMC-130P,78.0\nMC-130W,25.3163\nMH-53M,13.931\nMQ-1B,175.08\nMQ-9A,85.0\nNC-130H,1.0\nNC-135W,5.0\nNKC-135E,0.92\nOA-10A,78.3741\nOC-135B,6.0\nRC-135S,3.0\nRC-135U,8.0\nRC-135V,32.0\nRC-135W,27.0\nRC-26B,22.0\nRQ-4A,18.93151\nRQ-4B,39.09\nT-1A,713.92\nT-37B,131.0648\nT-38A,134.82999999999998\nT-38C,1349.492\nT-41D,16.0\nT-43A,8.0\nT-51A,9.0\nT-53A,16.42\nT-6A,1170.5\nTC-130H,3.0\nTC-135S,3.92\nTC-135W,9.08\nTE-8A,4.0\nTG-10A,3.0\nTG-10B,23.0\nTG-10C,9.17\nTG-10D,8.0\nTG-12A,3.17\nTG-14A,14.0\nTG-15A,4.0\nTG-15B,3.0\nTG-16A,11.83\nTH-1H,59.25\nTU-2S,15.0\nU-2S,84.0\nUH-1H,49.3504\nUH-1N,61.5\nUH-1V,5.0\nUV-18B,9.0\nVC-25A,6.0\nWC-130H,28.75\nWC-130J,30.0\nWC-135C,1.0\n'
+    var data_in = 'TMS,TAI\nA-10A,325.0998\nA-10C,1010.16\nAC-130H,40.0\nAC-130U,67.953\nAC-130W,13.0\nAT-38B,12.0\nB-1B,261.881\nB-2A,20.42\nB-52H,92.92\nC-12C,48.0\nC-12D,12.0\nC-12F,9.0\nC-12J,16.0\nC-130E,174.7017\nC-130H,539.1569999999999\nC-130J,118.92\nC-17A,400.91999999999996\nC-20B,10.0\nC-20C,6.0\nC-20E,1.0\nC-20H,4.0\nC-20K,2.0\nC-21A,104.83\nC-27J,11.42\nC-32A,12.0\nC-32B,8.0\nC-37A,16.0\nC-37B,5.08\nC-38A,4.0\nC-40B,8.0\nC-40C,17.92\nC-5A,177.0\nC-5B,82.7295\nC-5C,4.0\nC-5M,6.84\nCV-22B,8.25\nE-11A,0.08\nE-3B,114.42\nE-3C,44.42\nE-3G,1.17\nE-4B,12.0\nE-8C,34.0\nEC-130H,42.0\nEC-130J,28.0\nF-15A,73.10824\nF-15B,5.83\nF-15C,834.174\nF-15D,104.0\nF-15E,889.3399999999999\nF-16A,0.42\nF-16B,2.98634\nF-16C,2847.8419999999996\nF-16D,337.0\nF-22A,262.33000000000004\nHC-130J,4.17\nHC-130N,30.0\nHC-130P,46.0\nHH-60G,200.75\nKC-10A,118.0\nKC-135E,64.4492\nKC-135R,1088.17\nKC-135T,108.0\nLC-130H,20.0\nMC-12W,78.0\nMC-130E,32.65981\nMC-130H,80.0\nMC-130J,7.08\nMC-130P,78.0\nMC-130W,25.3163\nMH-53M,13.931\nMQ-1B,175.08\nMQ-9A,85.0\nNC-130H,1.0\nNC-135W,5.0\nNKC-135E,0.92\nOA-10A,78.3741\nOC-135B,6.0\nRC-135S,3.0\nRC-135U,8.0\nRC-135V,32.0\nRC-135W,27.0\nRC-26B,22.0\nRQ-4A,18.93151\nRQ-4B,39.09\nT-1A,713.92\nT-37B,131.0648\nT-38A,134.82999999999998\nT-38C,1349.492\nT-41D,16.0\nT-43A,8.0\nT-51A,9.0\nT-53A,16.42\nT-6A,1170.5\nTC-130H,3.0\nTC-135S,3.92\nTC-135W,9.08\nTE-8A,4.0\nTG-10A,3.0\nTG-10B,23.0\nTG-10C,9.17\nTG-10D,8.0\nTG-12A,3.17\nTG-14A,14.0\nTG-15A,4.0\nTG-15B,3.0\nTG-16A,11.83\nTH-1H,59.25\nTU-2S,15.0\nU-2S,84.0\nUH-1H,49.3504\nUH-1N,61.5\nUH-1V,5.0\nUV-18B,9.0\nVC-25A,6.0\nWC-130H,28.75\nWC-130J,30.0\nWC-135C,1.0';
     plotBar(data_in);
     
 
