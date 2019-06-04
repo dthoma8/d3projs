@@ -135,15 +135,15 @@
       }
     }
 
-    function createLinearX(data, key, width){
-      var x = d3.scaleLinear().domain([0, 1.05*d3.max(data, (d) => (+d.key))]).range([0, width]).nice(),
+    function createLinearX(data, width){
+      var x = d3.scaleLinear().domain([0, 1.05*d3.max(data, (d) => (+d.value))]).range([0, width]).nice(),
         xAxis = d3.axisBottom(x);
 
       return [x, xAxis]
     }
 
-    function createOrdinalX(data, key, width){
-      console.log("thisiswhatyouareworkingwith",data[0])
+    function createOrdinalX(data, width){
+      console.log("thisiswhatyouareworkingwith",data.map((d)=>(+d.key)))
       
       var x = d3.scaleBand().domain(data.map((d)=>(+d.key))).rangeRound([0, width]),//.nice(),
         xAxis=d3.axisBottom(x);
@@ -151,7 +151,7 @@
       return [x, xAxis]
     }
 
-    function createLinearY(data, value, height){
+    function createLinearY(data, height){
       
       var y = d3.scaleLinear().domain([0, 1.05*d3.max(data, (d)=>(+d.value))]).range([height, 0]).nice(),
         yAxis = d3.axisLeft(y);
@@ -159,9 +159,9 @@
       return [y, yAxis]
     }
 
-    function createOrdinalY(data, value, height){
+    function createOrdinalY(data, height){
 
-      var y = d3.scaleBand().domain(data.map((d)=>(+d.value))).rangeRound([height, 0]),//.nice(),
+      var y = d3.scaleBand().domain(data.map((d)=>(+d.key))).rangeRound([height, 0]),//.nice(),
         yAxis = d3.axisLeft(y);
 
       return [y, yAxis]
@@ -333,8 +333,8 @@
         console.log("this is the value", value)
         setTempData(data, key, value);
 
-        var X = createOrdinalX(data, key, main_width),
-          Y = createLinearY(data, value, main_height),
+        var X = createOrdinalX(data, main_width),
+          Y = createLinearY(data, main_height),
           x=X[0],
           xAxis=X[1],
           y=Y[0],
