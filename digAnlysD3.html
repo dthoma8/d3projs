@@ -143,7 +143,7 @@
     }
 
     function createOrdinalX(data, key, width){
-      var x = d3.scaleBand().domain(data.map((d)=>(+d[key]))).rangeRound([0, width]).nice(),
+      var x = d3.scaleBand().domain(data.map((d)=>(+d[key]))).rangeRound([0, width]),//.nice(),
         xAxis=d3.axisBottom(x);
 
       return [x, xAxis]
@@ -159,7 +159,7 @@
 
     function createOrdinalY(data, value, height){
 
-      var y = d3.scaleBand().domain(data.map((d)=>(+d[value]))).rangeRound([height, 0]).nice(),
+      var y = d3.scaleBand().domain(data.map((d)=>(+d[value]))).rangeRound([height, 0]),//.nice(),
         yAxis = d3.axisLeft(y);
 
       return [y, yAxis]
