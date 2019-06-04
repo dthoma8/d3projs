@@ -159,7 +159,7 @@
 
     function createOrdinalY(data, value, height){
 
-      var y = d3.scaleBand().domain(data.map((d)=>(+d[key]))).rangeRound([height, 0]).nice(),
+      var y = d3.scaleBand().domain(data.map((d)=>(+d[value]))).rangeRound([height, 0]).nice(),
         yAxis = d3.axisLeft(y);
 
       return [y, yAxis]
@@ -331,8 +331,8 @@
         console.log("this is the key ",key);
         //setTempData(data, key, value);
 
-        var X = createLinearX(data, value, main_width),
-          Y = createOrdinalY(data, key, main_height),
+        var X = createLinearX(data, key, main_width),
+          Y = createOrdinalY(data, value, main_height),
           x=X[0],
           xAxis=X[1],
           y=Y[0],
