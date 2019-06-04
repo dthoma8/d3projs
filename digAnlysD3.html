@@ -23,6 +23,11 @@
 
       return svg
     }
+    
+    //GET Unique
+    const  distinct = (value, index, self)=>{
+          return self.indexOf(value)==index;
+        }
 
     function getMeta(data_in) {
 
@@ -63,58 +68,41 @@
         } else{
           // instantiate keys
           key_info[k]["col_type"] = [];
-
+          key_info[k]["uniq_vals"]=[]
+          
           // fill values
           key_info[k]["col_type"].push("filter");
+          key_info[k]["uniq_vals"].push(obj[k].filter(distinct));
           // need to add cap to select
           key_info["keys"].push(k);
         }
       })
       console.log(key_info);
       return key_info  
-      }
-    
-    function formatBar(data_in, url=false){
-      try{
-        var data = d3.csvParse(data_in),
-          obj=[];
-        data.forEach((d)=>(obj.push(d)))
-
-        console.log("This is what obj looks like: ", obj);
-        return obj;
-
-      } catch(e){
-        return("Failure. %s"%e);
-      }
     }
 
-    function processData(data_in, plot_type="") {
+    function processData(data_in){
       
       var dfd = new $.Deferred();
     
       try {
-        if (plot_type == "scatter"){
-          var data = formatScatter(data_in);
-        } else if (plot_type == 'bar'){
-          var data = formatBar(data_in);
-           console.log("data within the if clause",data)
-        } else if (plot_type == 'line'){
-          var data = formatLine(data_in);
-        }
+        var data = d3.csvParse(data_in),
+          obj=[];
+        data.forEach((d)=>(obj.push(d)));
         
         console.log("data prior to entering getMeta:", data);
-        metaData = getMeta(data);
-        data.forEach(function(d) {
+        metaData = getMeta(obj);
+        obj.forEach(function(d) {
           d["meta"]={};
           d["meta"]=metaData;
-        })
-        console.log(data);
-        return data
-    
+        });
+        console.log(obj);
+        return obj;
+
       } catch(e) {
-    
+
         console.log("error in processData! "+e+"\n")
-    
+
       }
       
     }
@@ -296,10 +284,6 @@
 
       return legend
     }
-    
-    function selectColorCat(d){
-
-    }
 
     function mouseZoom(X, Y) {
       function zoom() {
@@ -406,7 +390,7 @@
     
     //var hope = readDataFromURL(path="https://raw.githubusercontent.com/dthoma8/d3projs/master/data/av_data.csv")
 
-    var data_in = 'TMS,TAI\nA-10A,325.0998\nA-10C,1010.16\nAC-130H,40.0\nAC-130U,67.953\nAC-130W,13.0\nAT-38B,12.0\nB-1B,261.881\nB-2A,20.42\nB-52H,92.92\nC-12C,48.0\nC-12D,12.0\nC-12F,9.0\nC-12J,16.0\nC-130E,174.7017\nC-130H,539.1569999999999\nC-130J,118.92\nC-17A,400.91999999999996\nC-20B,10.0\nC-20C,6.0\nC-20E,1.0\nC-20H,4.0\nC-20K,2.0\nC-21A,104.83\nC-27J,11.42\nC-32A,12.0\nC-32B,8.0\nC-37A,16.0\nC-37B,5.08\nC-38A,4.0\nC-40B,8.0\nC-40C,17.92\nC-5A,177.0\nC-5B,82.7295\nC-5C,4.0\nC-5M,6.84\nCV-22B,8.25\nE-11A,0.08\nE-3B,114.42\nE-3C,44.42\nE-3G,1.17\nE-4B,12.0\nE-8C,34.0\nEC-130H,42.0\nEC-130J,28.0\nF-15A,73.10824\nF-15B,5.83\nF-15C,834.174\nF-15D,104.0\nF-15E,889.3399999999999\nF-16A,0.42\nF-16B,2.98634\nF-16C,2847.8419999999996\nF-16D,337.0\nF-22A,262.33000000000004\nHC-130J,4.17\nHC-130N,30.0\nHC-130P,46.0\nHH-60G,200.75\nKC-10A,118.0\nKC-135E,64.4492\nKC-135R,1088.17\nKC-135T,108.0\nLC-130H,20.0\nMC-12W,78.0\nMC-130E,32.65981\nMC-130H,80.0\nMC-130J,7.08\nMC-130P,78.0\nMC-130W,25.3163\nMH-53M,13.931\nMQ-1B,175.08\nMQ-9A,85.0\nNC-130H,1.0\nNC-135W,5.0\nNKC-135E,0.92\nOA-10A,78.3741\nOC-135B,6.0\nRC-135S,3.0\nRC-135U,8.0\nRC-135V,32.0\nRC-135W,27.0\nRC-26B,22.0\nRQ-4A,18.93151\nRQ-4B,39.09\nT-1A,713.92\nT-37B,131.0648\nT-38A,134.82999999999998\nT-38C,1349.492\nT-41D,16.0\nT-43A,8.0\nT-51A,9.0\nT-53A,16.42\nT-6A,1170.5\nTC-130H,3.0\nTC-135S,3.92\nTC-135W,9.08\nTE-8A,4.0\nTG-10A,3.0\nTG-10B,23.0\nTG-10C,9.17\nTG-10D,8.0\nTG-12A,3.17\nTG-14A,14.0\nTG-15A,4.0\nTG-15B,3.0\nTG-16A,11.83\nTH-1H,59.25\nTU-2S,15.0\nU-2S,84.0\nUH-1H,49.3504\nUH-1N,61.5\nUH-1V,5.0\nUV-18B,9.0\nVC-25A,6.0\nWC-130H,28.75\nWC-130J,30.0\nWC-135C,1.0';
+    var data_in = 'TMS,TAI,FYYearInt\nA-10A,240.37400000000002,2008\nA-10A,73.6492,2010\nA-10A,11.0766,2011\nA-10C,281.33,2010\nA-10C,333.33,2013\nA-10C,345.83,2012\nA-10C,49.67,2008\nAC-130H,8.0,2011\nAC-130H,8.0,2012\nAC-130H,8.0,2013\nAC-130H,8.0,2010\nAC-130H,8.0,2008\nAC-130U,16.9922,2010\nAC-130U,16.967,2011\nAC-130U,17.0,2012\nAC-130U,16.9938,2008\nAC-130W,12.0,2013\nAC-130W,1.0,2012\nAT-38B,6.0,2008\nAT-38B,6.0,2010\nB-1B,66.92,2008\nB-1B,65.961,2012\nB-1B,63.0,2013\nB-1B,66.0,2011\nB-2A,20.42,2008\nB-52H,92.92,2008\nC-12C,16.0,2010\nC-12C,16.0,2012\nC-12C,16.0,2009\nC-12D,6.0,2011\nC-12D,6.0,2008\nC-12F,3.0,2010\nC-12F,3.0,2011\nC-12F,3.0,2008\nC-12J,4.0,2009\nC-12J,4.0,2010\nC-12J,4.0,2011\nC-12J,4.0,2008\nC-130E,63.4437,2010\nC-130E,111.258,2008\nC-130H,271.157,2008\nC-130H,268.0,2011\nC-130J,65.42,2010\nC-130J,53.5,2009\nC-17A,185.92,2009\nC-17A,215.0,2012\nC-20B,5.0,2008\nC-20B,5.0,2010\nC-20C,3.0,2009\nC-20C,3.0,2011\nC-20E,1.0,2008\nC-20H,2.0,2010\nC-20H,2.0,2008\nC-20K,1.0,2010\nC-20K,1.0,2011\nC-21A,56.5,2009\nC-21A,48.33,2012\nC-27J,11.42,2012\nC-32A,4.0,2009\nC-32A,4.0,2008\nC-32A,4.0,2011\nC-32B,2.0,2009\nC-32B,2.0,2011\nC-32B,2.0,2012\nC-32B,2.0,2008\nC-37A,8.0,2012\nC-37A,8.0,2008\nC-37B,0.33,2008\nC-37B,1.0,2009\nC-37B,1.58,2010\nC-37B,2.17,2011\nC-38A,2.0,2010\nC-38A,2.0,2012\nC-40B,4.0,2010\nC-40B,4.0,2011\nC-40C,5.92,2008\nC-40C,6.0,2011\nC-40C,6.0,2009\nC-5A,59.0,2008\nC-5A,59.0,2009\nC-5A,59.0,2010\nC-5B,35.7295,2012\nC-5B,47.0,2008\nC-5C,2.0,2011\nC-5C,2.0,2012\nC-5M,2.17,2009\nC-5M,4.67,2011\nCV-22B,8.25,2008\nE-11A,0.08,2011\nE-3B,23.0,2010\nE-3B,23.0,2009\nE-3B,23.0,2011\nE-3B,22.42,2012\nE-3B,23.0,2008\nE-3C,9.0,2010\nE-3C,8.42,2012\nE-3C,9.0,2008\nE-3C,9.0,2009\nE-3C,9.0,2011\nE-3G,1.17,2012\nE-4B,4.0,2012\nE-4B,4.0,2008\nE-4B,4.0,2009\nE-8C,17.0,2012\nE-8C,17.0,2008\nEC-130H,14.0,2008\nEC-130H,14.0,2011\nEC-130H,14.0,2012\nEC-130J,7.0,2010\nEC-130J,7.0,2011\nEC-130J,7.0,2012\nEC-130J,7.0,2008\nF-15A,21.9973,2009\nF-15A,6.60274,2010\nF-15A,44.5082,2008\nF-15B,5.83,2008\nF-15C,288.92400000000004,2010\nF-15C,330.25,2008\nF-15C,215.0,2011\nF-15D,52.92,2008\nF-15D,51.08,2009\nF-15E,222.92,2009\nF-15E,222.0,2010\nF-15E,221.42,2011\nF-15E,223.0,2008\nF-16A,0.42,2008\nF-16B,2.98634,2008\nF-16C,1047.83,2008\nF-16C,944.762,2010\nF-16C,855.25,2012\nF-16D,176.0,2008\nF-16D,161.0,2012\nF-22A,110.25,2008\nF-22A,152.08,2010\nHC-130J,0.17,2010\nHC-130J,2.0,2011\nHC-130J,2.0,2012\nHC-130N,10.0,2008\nHC-130N,10.0,2010\nHC-130N,10.0,2009\nHC-130P,23.0,2009\nHC-130P,23.0,2008\nHH-60G,101.0,2008\nHH-60G,99.75,2010\nKC-10A,59.0,2008\nKC-10A,59.0,2009\nKC-135E,64.4492,2008\nKC-135R,363.0,2008\nKC-135R,363.0,2009\nKC-135R,362.17,2011\nKC-135T,54.0,2011\nKC-135T,54.0,2012\nLC-130H,10.0,2008\nLC-130H,10.0,2012\nMC-12W,36.33,2010\nMC-12W,41.17,2011\nMC-12W,0.5,2008\nMC-130E,14.0,2008\nMC-130E,10.0,2011\nMC-130E,8.65981,2012\nMC-130H,20.0,2010\nMC-130H,20.0,2011\nMC-130H,20.0,2008\nMC-130H,20.0,2012\nMC-130J,7.08,2012\nMC-130P,26.0,2009\nMC-130P,26.0,2011\nMC-130P,26.0,2008\nMC-130W,8.33,2009\nMC-130W,11.9863,2012\nMC-130W,5.0,2008\nMH-53M,13.931,2008\nMQ-1B,175.08,2011\nMQ-9A,68.58,2011\nMQ-9A,16.42,2008\nNC-130H,1.0,2010\nNC-135W,1.0,2010\nNC-135W,1.0,2009\nNC-135W,1.0,2011\nNC-135W,1.0,2012\nNC-135W,1.0,2008\nNKC-135E,0.92,2008\nOA-10A,78.3741,2008\nOC-135B,2.0,2009\nOC-135B,2.0,2012\nOC-135B,2.0,2008\nRC-135S,3.0,2008\nRC-135U,2.0,2008\nRC-135U,2.0,2010\nRC-135U,2.0,2011\nRC-135U,2.0,2012\nRC-135V,8.0,2010\nRC-135V,8.0,2011\nRC-135V,8.0,2012\nRC-135V,8.0,2008\nRC-135W,9.0,2010\nRC-135W,9.0,2011\nRC-135W,9.0,2012\nRC-26B,11.0,2008\nRC-26B,11.0,2009\nRQ-4A,4.93151,2011\nRQ-4A,7.0,2008\nRQ-4A,7.0,2009\nRQ-4B,12.92,2010\nRQ-4B,7.17,2009\nRQ-4B,19.0,2011\nT-1A,179.0,2008\nT-1A,178.92,2009\nT-1A,178.0,2010\nT-1A,178.0,2011\nT-37B,94.2297,2008\nT-37B,36.8351,2009\nT-38A,39.0,2009\nT-38A,54.0,2012\nT-38A,41.83,2008\nT-38C,449.0,2010\nT-38C,448.0,2012\nT-38C,452.49199999999996,2008\nT-41D,4.0,2010\nT-41D,4.0,2009\nT-41D,4.0,2012\nT-41D,4.0,2008\nT-43A,8.0,2008\nT-51A,3.0,2012\nT-51A,3.0,2010\nT-51A,3.0,2008\nT-53A,16.42,2012\nT-6A,388.17,2009\nT-6A,445.0,2012\nT-6A,337.33,2008\nTC-130H,1.0,2011\nTC-130H,1.0,2009\nTC-130H,1.0,2008\nTC-135S,1.0,2009\nTC-135S,1.0,2008\nTC-135S,1.0,2010\nTC-135S,0.92,2011\nTC-135W,2.0,2008\nTC-135W,2.08,2011\nTC-135W,3.0,2012\nTC-135W,2.0,2010\nTE-8A,1.0,2008\nTE-8A,1.0,2010\nTE-8A,1.0,2011\nTE-8A,1.0,2012\nTG-10A,1.0,2010\nTG-10A,1.0,2008\nTG-10A,1.0,2009\nTG-10B,12.0,2010\nTG-10B,11.0,2012\nTG-10C,4.17,2012\nTG-10C,5.0,2008\nTG-10D,4.0,2011\nTG-10D,4.0,2012\nTG-12A,1.0,2011\nTG-12A,0.17,2012\nTG-12A,1.0,2009\nTG-12A,1.0,2008\nTG-14A,10.0,2008\nTG-14A,4.0,2010\nTG-15A,2.0,2009\nTG-15A,2.0,2010\nTG-15B,3.0,2012\nTG-16A,11.83,2012\nTH-1H,4.5,2008\nTH-1H,16.75,2009\nTH-1H,19.0,2010\nTH-1H,19.0,2011\nTU-2S,5.0,2012\nTU-2S,5.0,2008\nTU-2S,5.0,2010\nU-2S,28.0,2008\nU-2S,28.0,2009\nU-2S,28.0,2011\nUH-1H,26.42,2008\nUH-1H,22.9304,2009\nUH-1N,61.5,2012\nUH-1V,2.0,2012\nUH-1V,3.0,2008\nUV-18B,3.0,2008\nUV-18B,3.0,2009\nUV-18B,3.0,2010\nVC-25A,2.0,2011\nVC-25A,2.0,2009\nVC-25A,2.0,2010\nWC-130H,10.0,2009\nWC-130H,9.75,2011\nWC-130H,9.0,2012\nWC-130J,10.0,2009\nWC-130J,10.0,2011\nWC-130J,10.0,2012\nWC-135C,1.0,2010';
     plotBar(data_in);
     
 
