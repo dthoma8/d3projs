@@ -1,0 +1,151 @@
+,country,search_term,country_code,scopus,uspto,total
+0,Australia,integrated corridor management,AUS,60.0,0.0,60.0
+1,Australia,road user charging,AUS,30.0,0.0,30.0
+2,Australia,smart cities,AUS,1518.0,0.0,1518.0
+3,Australia,traffic signal coordination,AUS,58.0,0.0,58.0
+4,Australia,traffic simulation,AUS,210.0,0.0,210.0
+5,Australia,transportation system resilience,AUS,22.0,0.0,22.0
+6,Australia,unmanned aircraft systems,AUS,268.0,1.0,269.0
+7,Austria,truck platooning,AUT,8.0,0.0,8.0
+8,Belgium,unmanned aircraft systems,BEL,0.0,1.0,1.0
+9,Canada,automated vehicle,CAN,242.0,0.0,242.0
+10,Canada,autonomous vehicles,CAN,1300.0,0.0,1300.0
+11,Canada,connected vehicle,CAN,340.0,0.0,340.0
+12,Canada,integrated corridor management,CAN,62.0,0.0,62.0
+13,Canada,intelligent transportation systems,CAN,752.0,0.0,752.0
+14,Canada,traffic signal coordination,CAN,54.0,1.0,55.0
+15,Canada,transportation system resilience,CAN,20.0,0.0,20.0
+16,Canada,traveler information systems,CAN,62.0,0.0,62.0
+17,Canada,unmanned aircraft systems,CAN,148.0,14.0,162.0
+18,Canada,workzone safety,CAN,2.0,0.0,2.0
+19,China,automated vehicle,CHN,1086.0,0.0,1086.0
+20,China,autonomous vehicles,CHN,6182.0,0.0,6182.0
+21,China,connected vehicle,CHN,1540.0,0.0,1540.0
+22,China,integrated corridor management,CHN,210.0,0.0,210.0
+23,China,intelligent transportation systems,CHN,6034.0,0.0,6034.0
+24,China,road user charging,CHN,194.0,0.0,194.0
+25,China,smart cities,CHN,10622.0,0.0,10622.0
+26,China,traffic signal coordination,CHN,676.0,1.0,677.0
+27,China,traffic simulation,CHN,1866.0,3.0,1869.0
+28,China,transportation system resilience,CHN,120.0,0.0,120.0
+29,China,traveler information systems,CHN,584.0,0.0,584.0
+30,China,truck platooning,CHN,26.0,0.0,26.0
+31,China,unmanned aircraft systems,CHN,188.0,2.0,190.0
+32,China,vehicle-to-pedestrian,CHN,110.0,0.0,110.0
+33,France,automated vehicle,FRA,268.0,0.0,268.0
+34,France,autonomous vehicles,FRA,1800.0,0.0,1800.0
+35,France,connected vehicle,FRA,228.0,0.0,228.0
+36,France,integrated corridor management,FRA,30.0,0.0,30.0
+37,France,intelligent transportation systems,FRA,694.0,0.0,694.0
+38,France,road user charging,FRA,30.0,0.0,30.0
+39,France,smart cities,FRA,1516.0,0.0,1516.0
+40,France,traffic simulation,FRA,228.0,0.0,228.0
+41,France,transportation system resilience,FRA,40.0,0.0,40.0
+42,France,traveler information systems,FRA,80.0,0.0,80.0
+43,France,truck platooning,FRA,18.0,0.0,18.0
+44,France,vehicle-to-pedestrian,FRA,14.0,0.0,14.0
+45,Germany,automated vehicle,DEU,1490.0,0.0,1490.0
+46,Germany,autonomous vehicles,DEU,2660.0,0.0,2660.0
+47,Germany,connected vehicle,DEU,292.0,0.0,292.0
+48,Germany,integrated corridor management,DEU,42.0,0.0,42.0
+49,Germany,intelligent transportation systems,DEU,610.0,0.0,610.0
+50,Germany,road user charging,DEU,56.0,0.0,56.0
+51,Germany,smart cities,DEU,1784.0,0.0,1784.0
+52,Germany,traffic signal coordination,DEU,64.0,0.0,64.0
+53,Germany,traffic simulation,DEU,578.0,2.0,580.0
+54,Germany,transportation system resilience,DEU,30.0,0.0,30.0
+55,Germany,traveler information systems,DEU,62.0,0.0,62.0
+56,Germany,truck platooning,DEU,54.0,0.0,54.0
+57,Germany,unmanned aircraft systems,DEU,288.0,3.0,291.0
+58,Germany,vehicle-to-pedestrian,DEU,30.0,0.0,30.0
+59,Greece,workzone safety,GRC,2.0,0.0,2.0
+60,Hong Kong,transportation system resilience,HKG,26.0,0.0,26.0
+61,India,automated vehicle,IND,242.0,0.0,242.0
+62,India,autonomous vehicles,IND,1524.0,0.0,1524.0
+63,India,connected vehicle,IND,208.0,0.0,208.0
+64,India,integrated corridor management,IND,44.0,0.0,44.0
+65,India,intelligent transportation systems,IND,1722.0,0.0,1722.0
+66,India,smart cities,IND,5400.0,0.0,5400.0
+67,India,traffic signal coordination,IND,62.0,0.0,62.0
+68,India,traffic simulation,IND,202.0,1.0,203.0
+69,India,traveler information systems,IND,70.0,0.0,70.0
+70,India,vehicle-to-pedestrian,IND,12.0,0.0,12.0
+71,Ireland,vehicle-to-pedestrian,IRL,10.0,0.0,10.0
+72,Israel,traffic simulation,ISR,0.0,3.0,3.0
+73,Israel,truck platooning,ISR,0.0,2.0,2.0
+74,Italy,autonomous vehicles,ITA,1362.0,0.0,1362.0
+75,Italy,connected vehicle,ITA,178.0,0.0,178.0
+76,Italy,integrated corridor management,ITA,50.0,0.0,50.0
+77,Italy,intelligent transportation systems,ITA,650.0,0.0,650.0
+78,Italy,road user charging,ITA,48.0,0.0,48.0
+79,Italy,smart cities,ITA,3720.0,0.0,3720.0
+80,Italy,traffic signal coordination,ITA,46.0,0.0,46.0
+81,Italy,traffic simulation,ITA,208.0,2.0,210.0
+82,Italy,transportation system resilience,ITA,62.0,0.0,62.0
+83,Italy,traveler information systems,ITA,80.0,0.0,80.0
+84,Italy,truck platooning,ITA,16.0,0.0,16.0
+85,Italy,unmanned aircraft systems,ITA,164.0,0.0,164.0
+86,Japan,automated vehicle,JPN,254.0,0.0,254.0
+87,Japan,autonomous vehicles,JPN,1304.0,0.0,1304.0
+88,Japan,connected vehicle,JPN,162.0,0.0,162.0
+89,Japan,road user charging,JPN,30.0,0.0,30.0
+90,Japan,traffic signal coordination,JPN,56.0,1.0,57.0
+91,Japan,traffic simulation,JPN,400.0,7.0,407.0
+92,Japan,traveler information systems,JPN,56.0,0.0,56.0
+93,Japan,truck platooning,JPN,88.0,1.0,89.0
+94,Japan,unmanned aircraft systems,JPN,74.0,3.0,77.0
+95,Japan,vehicle-to-pedestrian,JPN,58.0,0.0,58.0
+96,Luxembourg,traffic simulation,LUX,0.0,3.0,3.0
+97,Netherlands,automated vehicle,NLD,486.0,0.0,486.0
+98,Netherlands,traffic simulation,NLD,182.0,2.0,184.0
+99,Netherlands,traveler information systems,NLD,0.0,1.0,1.0
+100,Netherlands,truck platooning,NLD,48.0,0.0,48.0
+101,Portugal,integrated corridor management,PRT,24.0,0.0,24.0
+102,Russian Federation,smart cities,RUS,1718.0,0.0,1718.0
+103,Saudi Arabia,unmanned aircraft systems,SAU,0.0,2.0,2.0
+104,South Korea,autonomous vehicles,KOR,1990.0,0.0,1990.0
+105,South Korea,connected vehicle,KOR,196.0,0.0,196.0
+106,South Korea,intelligent transportation systems,KOR,764.0,0.0,764.0
+107,South Korea,traffic signal coordination,KOR,36.0,0.0,36.0
+108,South Korea,traveler information systems,KOR,100.0,1.0,101.0
+109,South Korea,truck platooning,KOR,14.0,0.0,14.0
+110,South Korea,unmanned aircraft systems,KOR,102.0,0.0,102.0
+111,South Korea,vehicle-to-pedestrian,KOR,24.0,0.0,24.0
+112,Spain,intelligent transportation systems,ESP,722.0,0.0,722.0
+113,Spain,road user charging,ESP,38.0,0.0,38.0
+114,Spain,smart cities,ESP,2450.0,0.0,2450.0
+115,Spain,unmanned aircraft systems,ESP,122.0,0.0,122.0
+116,Spain,vehicle-to-pedestrian,ESP,14.0,0.0,14.0
+117,Sweden,automated vehicle,SWE,282.0,0.0,282.0
+118,Sweden,road user charging,SWE,46.0,0.0,46.0
+119,Sweden,transportation system resilience,SWE,18.0,0.0,18.0
+120,Sweden,truck platooning,SWE,60.0,0.0,60.0
+121,Sweden,unmanned aircraft systems,SWE,0.0,8.0,8.0
+122,Sweden,vehicle-to-pedestrian,SWE,24.0,0.0,24.0
+123,Taiwan,intelligent transportation systems,TWN,606.0,0.0,606.0
+124,United Kingdom,automated vehicle,GBR,480.0,0.0,480.0
+125,United Kingdom,autonomous vehicles,GBR,2064.0,0.0,2064.0
+126,United Kingdom,connected vehicle,GBR,222.0,0.0,222.0
+127,United Kingdom,integrated corridor management,GBR,64.0,0.0,64.0
+128,United Kingdom,road user charging,GBR,112.0,0.0,112.0
+129,United Kingdom,smart cities,GBR,3126.0,0.0,3126.0
+130,United Kingdom,traffic signal coordination,GBR,50.0,0.0,50.0
+131,United Kingdom,traffic simulation,GBR,178.0,3.0,181.0
+132,United Kingdom,transportation system resilience,GBR,60.0,0.0,60.0
+133,United Kingdom,traveler information systems,GBR,70.0,0.0,70.0
+134,United Kingdom,unmanned aircraft systems,GBR,140.0,2.0,142.0
+135,United States,automated vehicle,USA,2376.0,0.0,2376.0
+136,United States,autonomous vehicles,USA,9166.0,0.0,9166.0
+137,United States,connected vehicle,USA,2122.0,0.0,2122.0
+138,United States,integrated corridor management,USA,286.0,0.0,286.0
+139,United States,intelligent transportation systems,USA,2582.0,0.0,2582.0
+140,United States,road user charging,USA,92.0,0.0,92.0
+141,United States,smart cities,USA,5624.0,0.0,5624.0
+142,United States,traffic signal coordination,USA,348.0,0.0,348.0
+143,United States,traffic simulation,USA,1224.0,54.0,1278.0
+144,United States,transportation system resilience,USA,404.0,0.0,404.0
+145,United States,traveler information systems,USA,464.0,2.0,466.0
+146,United States,truck platooning,USA,102.0,6.0,108.0
+147,United States,unmanned aircraft systems,USA,3214.0,104.0,3318.0
+148,United States,vehicle-to-pedestrian,USA,80.0,0.0,80.0
+149,United States,workzone safety,USA,4.0,1.0,5.0
